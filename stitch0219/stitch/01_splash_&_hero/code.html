@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Q genetics - Splash &amp; Hero</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3A5A40", // Sage Green / Hunter Green
+                        "primary-light": "#8DA685", // Soft Sage
+                        "background-light": "#F2F7F2", // Very pale green mist
+                        "background-dark": "#1A2F1C", // Dark forest
+                        "surface": "rgba(255, 255, 255, 0.9)",
+                        "text-main": "#1A2F1C", // Dark Green text
+                        "text-muted": "#5F7161", // Muted Sage
+                        "accent": "#A3B18A", // Light Moss accent
+                    },
+                    fontFamily: {
+                        "display": ["Fraunces", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'organic-gradient': 'radial-gradient(circle at 50% 50%, rgba(58, 90, 64, 0.1) 0%, rgba(242, 247, 242, 0) 70%)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }@keyframes subtle-pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+        .animate-subtle-pulse {
+            animation: subtle-pulse 3s ease-in-out infinite;
+        }@keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }@keyframes fade-in-up {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 1s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-700 { animation-delay: 0.7s; }@keyframes unwind {
+            0% { stroke-dashoffset: 100; }
+            50% { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: -100; }
+        }
+        .animate-unwind {
+            stroke-dasharray: 100;
+            animation: unwind 3s linear infinite;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-main antialiased overflow-x-hidden selection:bg-primary/30">
+<main class="relative h-screen w-full flex flex-col items-center justify-between overflow-hidden">
+<div class="absolute inset-0 w-full h-full z-0">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4hGh3t15PL4O8IGcsC3nlzR3GI2e40itRkvqRaxU--gue5HQs_FDayHjSyGZlcVrIPJOTj6P6gNz-9N4E9ARUFjGg5kyL_60YJ-a61bx0RmnGVkPg73ZwDUozBxz3ZH6ksRVq8KU76uQSfc1TTsM_X8t5GkO0SnWfM7z5onJ5pV9MOUKfCkPMxy5IdCtQIg8KCHkE3IEuI-XvSeITCTmr_h4hXPUqg1lhFosrReDL6nQwFNHh0TVt2QfJx4Q-XCLl9BGD7yRibucm'); filter: contrast(0.85) brightness(0.9) hue-rotate(90deg) saturate(0.8);">
+</div>
+<div class="absolute inset-0 bg-[#3A5A40]/50 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[#1A2F1C]/40 via-transparent to-[#1A2F1C]/70"></div>
+</div>
+<header class="relative z-10 w-full px-6 py-6 flex items-center justify-between animate-fade-in-up delay-100">
+<div class="w-10"></div>
+<div class="flex flex-col items-center drop-shadow-md">
+<img alt="Q genetics Logo" class="h-8 object-contain brightness-0 invert opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwSanSPsemGUgJm0tSG04fVUwASuuL3u7WP-QGOHtpOlTEJAPqPMIUygbNn5WhWPewG6V96ZOHWXoe15KPPSTuvbqQgVojTUX_M9fICMlhfeCIULiJnY2uqWWKY5lJMhP7NkTbGp8Bk9HME-0Q5NkoLESj_Gs5lUgytUs4l0vkAUzhm2tcnqb54NzHj8W-nOsDXLm1SjIkRznNnCPwzUd7OgTYjyTSUAvF7T2JYBEmENk28aZrIMRngoAZ8p6aP-vdMWFDpATmZjXB"/>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md text-white hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<div class="relative z-10 flex flex-col items-center text-center px-6 max-w-2xl mt-auto mb-auto">
+<div class="animate-fade-in-up delay-300 mb-6">
+<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/20 bg-emerald-900/30 backdrop-blur-md text-white/90 text-xs font-medium uppercase tracking-wider shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-pulse"></span>
+                    Bio-Harmonic Science
+                </span>
+</div>
+<h1 class="animate-fade-in-up delay-500 font-display font-semibold text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white tracking-tight drop-shadow-lg mb-6">
+                Restoring the <br/>
+<span class="italic font-light opacity-90 text-emerald-100 bg-gradient-to-r from-emerald-100 to-blue-100 bg-clip-text text-transparent">Rhythm of Life</span>
+</h1>
+<p class="animate-fade-in-up delay-700 font-body text-lg md:text-xl text-emerald-50/80 font-light max-w-md leading-relaxed drop-shadow-md">
+                Soft Aging solutions for hard biological problems. We don't fight time; we harmonize with it.
+            </p>
+</div>
+<div class="relative z-10 w-full flex flex-col items-center pb-8 gap-6 animate-fade-in-up delay-700">
+<button class="group relative overflow-hidden rounded-xl bg-white/90 backdrop-blur px-8 py-4 transition-all hover:bg-white hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-emerald-900/20">
+<div class="flex items-center gap-3">
+<span class="text-primary font-bold text-sm uppercase tracking-widest">Explore The Pipeline</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform text-sm">arrow_forward</span>
+</div>
+</button>
+<div class="flex flex-col items-center gap-2 mt-4 opacity-80">
+<span class="text-emerald-100/60 text-[10px] uppercase tracking-[0.2em]">Scroll to Discover</span>
+<div class="h-16 w-6 relative overflow-hidden">
+<svg class="w-full h-full text-emerald-200" fill="none" viewBox="0 0 24 100" xmlns="http://www.w3.org/2000/svg">
+<path class="animate-unwind" d="M12 0C18 10 18 20 12 30C6 40 6 50 12 60C18 70 18 80 12 90" stroke="currentColor" stroke-linecap="round" stroke-opacity="0.8" stroke-width="1.5"></path>
+<path class="animate-unwind" d="M12 0C6 10 6 20 12 30C18 40 18 50 12 60C6 70 6 80 12 90" stroke="currentColor" stroke-linecap="round" stroke-opacity="0.4" stroke-width="1.5" style="animation-delay: -1.5s;"></path>
+</svg>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Simple parallax effect on scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const background = document.querySelector('.bg-cover');
+            if(background) {
+                background.style.transform = `scale(1.05) translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body></html>

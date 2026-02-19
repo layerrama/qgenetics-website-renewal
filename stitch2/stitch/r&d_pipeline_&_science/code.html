@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Qgenetics R&amp;D Pipeline</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#37ec13",
+                        "primary-dark": "#2ab80f",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#132210", // Deep dark green/black
+                        "surface-dark": "#1a2c17", // Slightly lighter for cards
+                        "surface-border": "#2b4526",
+                        "neutral-sage": "#a1b99d",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased selection:bg-primary selection:text-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl border-x border-surface-border/30">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center bg-background-dark/80 backdrop-blur-md p-4 justify-between border-b border-surface-border">
+<button class="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<div class="flex items-center gap-2">
+<div class="size-6 bg-primary rounded-full flex items-center justify-center text-background-dark font-bold text-xs">Q</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-tight font-display">Qgenetics</h2>
+</div>
+<button class="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</button>
+</header>
+<!-- Hero Section -->
+<div class="p-4">
+<div class="relative overflow-hidden rounded-2xl min-h-[420px] flex flex-col justify-end p-6 bg-surface-dark border border-surface-border group">
+<!-- Background Image -->
+<div class="absolute inset-0 bg-cover bg-center z-0 opacity-60 mix-blend-overlay transition-transform duration-700 group-hover:scale-105" data-alt="Abstract DNA helix structure glowing blue and green" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFo0pE32CvivoEClBpodaeNAdITWJqz0UQG3Oit1Z89Vp4DTXUEa-bTZfoEis5vfkn_miUPbMa3UuqpEoowqk1zo1iVf1BccCWjmPFyNakzyAjUuMrrsuWoI7Tc6WkoPczUL4yM_3j87c4dq0AJMArVzP3aCZz8t92cl7LfLhameYqcJbX9eorvwUQtKhN5NL_kz1V7plfirHHxFyIJL27wUacF_-P2hAAIHA4tkxHePDDKav-mGjLsA7BFFCZzZBKUfn0CN4nRA1R');">
+</div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent z-10"></div>
+<div class="relative z-20 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 border border-primary/30 w-fit backdrop-blur-sm">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-primary text-xs font-bold uppercase tracking-wider">2024 Pipeline</span>
+</div>
+<h1 class="text-white text-4xl font-bold leading-[1.1] tracking-tight font-display">
+                        Transforming <span class="text-primary">Bio-Innovation</span> into Clinical Reality
+                    </h1>
+<p class="text-neutral-sage text-sm font-light leading-relaxed max-w-[90%]">
+                        Pioneering the next generation of gene therapies through proprietary AI-driven discovery and accelerated clinical pathways.
+                    </p>
+<button class="mt-2 flex items-center justify-center gap-2 w-full h-12 bg-primary hover:bg-primary-dark transition-colors rounded-xl text-background-dark text-base font-bold font-display">
+<span>View Full Report</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Filter Navigation -->
+<div class="sticky top-[72px] z-40 bg-background-dark/95 backdrop-blur-sm border-b border-surface-border/50 pb-2 pt-0 px-4 -mt-2 mb-6 overflow-x-auto no-scrollbar">
+<div class="flex gap-3 min-w-max">
+<button class="flex h-9 items-center justify-center px-5 rounded-full bg-white text-background-dark text-sm font-bold shadow-lg shadow-primary/5 transition-transform active:scale-95">
+                    All Projects
+                </button>
+<button class="flex h-9 items-center justify-center px-5 rounded-full bg-surface-dark border border-surface-border text-neutral-sage text-sm font-medium hover:text-white hover:border-primary/50 transition-all active:scale-95">
+                    Oncology
+                </button>
+<button class="flex h-9 items-center justify-center px-5 rounded-full bg-surface-dark border border-surface-border text-neutral-sage text-sm font-medium hover:text-white hover:border-primary/50 transition-all active:scale-95">
+                    Regenerative
+                </button>
+<button class="flex h-9 items-center justify-center px-5 rounded-full bg-surface-dark border border-surface-border text-neutral-sage text-sm font-medium hover:text-white hover:border-primary/50 transition-all active:scale-95">
+                    Platform
+                </button>
+</div>
+</div>
+<!-- Section Title -->
+<div class="px-5 mb-4 flex items-end justify-between">
+<h3 class="text-white text-xl font-bold font-display">Active Pipeline</h3>
+<span class="text-primary text-xs font-mono uppercase tracking-widest mb-1">Q3 Update</span>
+</div>
+<!-- Cards Container -->
+<div class="flex flex-col gap-6 px-4 pb-20">
+<!-- Card 1: AI-MSC Platform -->
+<article class="relative overflow-hidden rounded-2xl bg-surface-dark border border-surface-border shadow-lg">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px] text-primary">hub</span>
+</div>
+<div class="p-5 flex flex-col h-full relative z-10">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 rounded-md bg-primary/10 text-primary text-xs font-bold uppercase tracking-wide border border-primary/20">Foundational</span>
+<button class="text-neutral-sage hover:text-white"><span class="material-symbols-outlined">more_horiz</span></button>
+</div>
+<h3 class="text-2xl font-bold text-white mb-2 font-display">AI-MSC Platform</h3>
+<p class="text-neutral-sage text-sm leading-relaxed mb-6">
+                        Next-gen mesenchymal stem cell optimization using proprietary AI models to predict efficacy markers.
+                    </p>
+<!-- Stats Grid -->
+<div class="grid grid-cols-2 gap-3 mb-6">
+<div class="bg-background-dark/50 rounded-lg p-3 border border-surface-border/50">
+<div class="text-primary text-lg font-bold font-display">98%</div>
+<div class="text-neutral-sage text-xs">Prediction Accuracy</div>
+</div>
+<div class="bg-background-dark/50 rounded-lg p-3 border border-surface-border/50">
+<div class="text-white text-lg font-bold font-display">14k+</div>
+<div class="text-neutral-sage text-xs">Markers Analyzed</div>
+</div>
+</div>
+<div class="mt-auto pt-4 border-t border-surface-border/50 flex items-center justify-between">
+<span class="text-xs text-neutral-sage flex items-center gap-1">
+<span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                            Live Monitoring
+                         </span>
+<button class="text-sm font-bold text-white hover:text-primary transition-colors flex items-center gap-1">
+                            Details <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: QG3030 -->
+<article class="relative rounded-2xl bg-surface-dark border border-surface-border shadow-lg overflow-hidden">
+<!-- Visual Header -->
+<div class="h-32 w-full bg-cover bg-center relative" data-alt="Microscopic view of cells with green fluorescent markers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMVdU9plmY6X7CiyluRPfGBnPWBeDrNSWm89c6g05xJRugnQLHRcITbqtoKhfQkMf2LXqgUqrkTpppW-fI2fbHnXNsuuV9xeZfa5odTK2AFnwy67BsTlUGbX5B7LHWf1wLRLqQGm_-P3xrGGPKNNEzzGg4AjQdK1vxBR1k1kO7tCNr7VKz7wiz8tvDJcmYVRLOUYWg-e7FcXqtXFy21MrPAltbPo0klbZUwSvBwWvKGcrVZbuYw8bER3olkj_bK-gvuk_r4Iu1wUbF');">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface-dark"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 rounded-md bg-black/60 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wide border border-white/10">Oncology</span>
+</div>
+</div>
+<div class="p-5 pt-2">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-2xl font-bold text-white font-display">QG3030</h3>
+<span class="text-primary font-mono text-sm">Phase 2</span>
+</div>
+<p class="text-neutral-sage text-sm leading-relaxed mb-6">
+                        Targeted gene therapy for solid tumor reduction showing significant regression in early trials.
+                    </p>
+<!-- Progress Tracker -->
+<div class="mb-6">
+<div class="flex justify-between text-[10px] text-neutral-sage uppercase font-bold tracking-wider mb-2">
+<span>Disc</span>
+<span>Pre-Clin</span>
+<span class="text-white">Phase 1</span>
+<span class="text-primary">Phase 2</span>
+<span class="opacity-50">Phase 3</span>
+</div>
+<div class="h-2 w-full bg-background-dark rounded-full overflow-hidden relative">
+<!-- Grid lines for phases -->
+<div class="absolute inset-0 grid grid-cols-5 z-10 w-full h-full">
+<div class="border-r border-background-dark"></div>
+<div class="border-r border-background-dark"></div>
+<div class="border-r border-background-dark"></div>
+<div class="border-r border-background-dark"></div>
+<div></div>
+</div>
+<!-- Fill Bar -->
+<div class="h-full bg-gradient-to-r from-primary/60 to-primary w-[70%] rounded-full relative z-0"></div>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-surface-border/50 hover:bg-surface-border text-white text-sm font-bold border border-surface-border transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">science</span>
+                        View Clinical Data
+                    </button>
+</div>
+</article>
+<!-- Card 3: QBone -->
+<article class="relative rounded-2xl bg-surface-dark border border-surface-border shadow-lg">
+<div class="p-5">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-lg bg-surface-border flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">orthopedics</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-white font-display">QBone</h3>
+<p class="text-neutral-sage text-xs">Regenerative Medicine</p>
+</div>
+</div>
+<div class="text-right">
+<div class="text-white font-bold text-sm">Pre-clinical</div>
+<div class="text-neutral-sage text-[10px]">IND Enabling</div>
+</div>
+</div>
+<p class="text-neutral-sage text-sm leading-relaxed mb-5">
+                        Accelerated osteogenesis for critical fractures. Novel peptide delivery system for rapid bone density recovery.
+                    </p>
+<!-- Compact Progress -->
+<div class="bg-background-dark/50 rounded-lg p-3 border border-surface-border/50 mb-4 flex items-center gap-4">
+<div class="flex-1 flex flex-col gap-1">
+<div class="flex justify-between text-xs">
+<span class="text-white font-medium">Progress</span>
+<span class="text-primary font-mono">30%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-border rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[30%] rounded-full"></div>
+</div>
+</div>
+<div class="h-8 w-[1px] bg-surface-border"></div>
+<div class="text-center min-w-[60px]">
+<span class="block text-white font-bold text-sm">Q4</span>
+<span class="block text-[10px] text-neutral-sage uppercase">Target</span>
+</div>
+</div>
+<button class="w-full py-2 text-sm text-neutral-sage hover:text-primary transition-colors font-medium border-t border-surface-border/50 pt-3 mt-1">
+                        Read Publication →
+                    </button>
+</div>
+</article>
+<!-- Bottom Spacer for visuals -->
+<div class="flex flex-col items-center justify-center gap-2 py-8 opacity-50">
+<span class="material-symbols-outlined text-neutral-sage text-2xl animate-bounce">keyboard_arrow_down</span>
+<p class="text-xs text-neutral-sage uppercase tracking-widest">More Discoveries</p>
+</div>
+</div>
+<!-- Floating Action Button (Optional for Contact/Inquiry) -->
+<button class="fixed bottom-6 right-6 size-14 bg-primary text-background-dark rounded-full shadow-lg shadow-primary/20 flex items-center justify-center z-50 hover:bg-white transition-colors hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-[28px]">mail</span>
+</button>
+</div>
+</body></html>

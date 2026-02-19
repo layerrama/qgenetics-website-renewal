@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Q Genetics - Harmonic Sage</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "sage-dark": "#2D4A3E", 
+                        "sage-medium": "#4A6E5D", 
+                        "sage-light": "#8FB3A1",
+                        "sage-accent": "#D1E8DD",
+                        "primary": "#3E5C4E", 
+                        "background-dark": "#1F332A", 
+                        "accent": "#A3C9B8", 
+                        "white": "#FFFFFF",
+                        "silver": "#F0F4F2", 
+                        "slate-900": "#11221C",
+                        "slate-500": "#6B8E7D",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                        "mono": ["Space Grotesk", "monospace"], 
+                    },
+                    backgroundImage: {
+                        'sage-gradient': 'linear-gradient(135deg, #2D4A3E 0%, #1F332A 100%)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 8s ease-in-out infinite',
+                        'scan': 'scan 2s ease-in-out infinite',
+                        'breathe': 'breathe 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-15px) rotate(2deg)' },
+                        },
+                        breathe: {
+                            '0%, 100%': { opacity: '0.6', transform: 'scale(1)' },
+                            '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+                        },
+                        scan: {
+                            '0%, 100%': { opacity: '0.4', height: '40px' },
+                            '50%': { opacity: '1', height: '60px' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1F332A; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4A6E5D; 
+            border-radius: 2px;
+        }
+        .sage-fluid-bg {
+            background: radial-gradient(circle at 10% 20%, rgba(163, 201, 184, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(74, 110, 93, 0.25) 0%, transparent 40%),
+                        radial-gradient(circle at 50% 50%, #2D4A3E 0%, #1F332A 100%);
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .organic-particle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.7), rgba(143, 179, 161, 0.2));
+            box-shadow: 0 0 25px rgba(163, 201, 184, 0.2);
+            filter: blur(8px);
+            opacity: 0.5;
+        }
+        .dna-helix-abstract {
+            position: absolute;
+            top: 45%;
+            left: 55%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            width: 400px;
+            height: 800px;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 58px,
+                rgba(255, 255, 255, 0.03) 59px,
+                rgba(255, 255, 255, 0.08) 60px
+            );
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+            z-index: 1;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .typewriter h1 {
+            overflow: hidden; 
+            white-space: pre-wrap; 
+            animation: typing 3.5s steps(40, end);
+        }
+        @keyframes typing {
+            from { opacity: 0; clip-path: inset(0 100% 0 0); }
+            to { opacity: 1; clip-path: inset(0 0 0 0); }
+        }
+        .text-gradient-sage {
+            background: linear-gradient(90deg, #FFFFFF 0%, #A3C9B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .q-logo-shape {
+            position: relative;
+            display: inline-block;
+        }
+        .q-logo-circle {
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 3px solid white;
+            border-radius: 50%;
+            position: relative;
+        }
+        .q-logo-tail {
+            position: absolute;
+            bottom: -2px;
+            right: -2px;
+            width: 12px;
+            height: 4px;
+            background: white;
+            transform: rotate(45deg);
+            transform-origin: left center;
+            border-radius: 2px;
+        }
+        .hero-logo-large {
+             width: 8rem;
+             height: 8rem;
+             border: 6px solid rgba(255,255,255,0.9);
+             border-radius: 50%;
+             position: relative;
+        }
+        .hero-logo-tail {
+            position: absolute;
+            bottom: 6px;
+            right: 2px;
+            width: 32px;
+            height: 8px;
+            background: white;
+            transform: rotate(45deg);
+            transform-origin: center;
+            border-radius: 4px;
+        }
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display antialiased text-white overflow-hidden h-screen w-full relative selection:bg-accent selection:text-sage-dark">
+<div class="sage-fluid-bg">
+<div class="organic-particle w-64 h-64 top-[-5%] right-[-10%] animate-breathe" style="background: radial-gradient(circle at 40% 40%, rgba(143, 179, 161, 0.4), rgba(45, 74, 62, 0));"></div>
+<div class="organic-particle w-96 h-96 bottom-[-10%] left-[-15%] animate-breathe" style="animation-delay: 2s; background: radial-gradient(circle at 60% 60%, rgba(74, 110, 93, 0.3), rgba(31, 51, 42, 0));"></div>
+<div class="particle w-24 h-24 top-1/3 left-1/4 animate-float" style="position: absolute; border-radius: 50%; background: white; filter: blur(40px); opacity: 0.1;"></div>
+<div class="dna-helix-abstract animate-pulse-slow"></div>
+<div class="absolute inset-0 z-[2]" style="background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(circle at 50% 40%, black, transparent 90%); opacity: 0.4;"></div>
+</div>
+<div class="relative z-10 flex flex-col h-full w-full justify-between p-6 md:p-8">
+<header class="flex items-center justify-between w-full">
+<div class="flex items-center gap-3">
+</div>
+<button class="group flex items-center justify-center w-12 h-12 rounded-full glass-panel hover:bg-white/10 transition-colors duration-300 ml-auto">
+<span class="material-symbols-outlined text-white group-hover:rotate-90 transition-transform duration-300">menu</span>
+</button>
+</header>
+<div class="flex-1 flex flex-col items-center justify-center -mt-16">
+<div class="flex flex-col items-center gap-8 animate-float">
+<div class="q-logo-shape relative mb-6">
+<div class="hero-logo-large shadow-[0_0_40px_rgba(163,201,184,0.3)] backdrop-blur-sm"></div>
+<div class="hero-logo-tail shadow-[0_0_15px_rgba(255,255,255,0.5)]"></div>
+</div>
+<div class="text-center space-y-2">
+<h2 class="text-4xl font-bold tracking-tight text-white drop-shadow-lg">
+                        Q <span class="font-light text-white/90">genetics</span>
+</h2>
+<div class="h-px w-24 bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto"></div>
+<p class="text-sage-light text-sm tracking-[0.2em] font-mono uppercase">Harmonic Resonance</p>
+</div>
+</div>
+</div>
+<footer class="flex flex-col md:flex-row items-end justify-between w-full gap-8 pb-8 md:pb-4">
+<div class="flex flex-col max-w-2xl w-full typewriter z-20">
+<div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/5 backdrop-blur-md w-fit">
+<div class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></div>
+<span class="text-[10px] md:text-xs font-mono uppercase tracking-widest text-accent">System Online</span>
+</div>
+<h1 class="text-4xl md:text-6xl font-bold leading-[1.1] tracking-tighter text-white drop-shadow-lg mb-4">
+                    Pioneering <br/>
+<span class="text-gradient-sage">Natural Synthesis.</span>
+</h1>
+<p class="text-sm md:text-base text-silver/80 font-mono max-w-md leading-relaxed border-l border-white/30 pl-4 backdrop-blur-[2px]">
+                    Bridging biological precision with <span class="text-white font-medium">Harmonic Sage</span> methodology for cellular longevity.
+                </p>
+</div>
+<div class="flex flex-col items-center gap-4 text-white/50 animate-pulse-slow absolute bottom-8 right-8 md:static">
+<span class="text-[10px] font-mono tracking-widest uppercase vertical-rl writing-mode-vertical rotate-180 hidden md:block">Initialize</span>
+<div class="w-[1px] h-24 bg-gradient-to-b from-transparent via-white/30 to-transparent relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full bg-white animate-scan"></div>
+</div>
+<span class="material-symbols-outlined text-xl animate-bounce mt-2 text-white/70">keyboard_arrow_down</span>
+</div>
+</footer>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#1F332A] via-[#1F332A]/60 to-transparent z-[-1] pointer-events-none"></div>
+</div>
+
+</body></html>

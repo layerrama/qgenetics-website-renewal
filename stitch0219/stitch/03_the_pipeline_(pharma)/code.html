@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sage Pharma Pipeline - Q genetics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Fraunces:opsz,wght@9..144,300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#355E3B", // Deep Sage/Hunter Green
+                        "primary-light": "#74A57F", // Soft Sage/Mint
+                        "primary-dark": "#1A3320", // Dark Forest
+                        "background-light": "#F5F7F5", // Very light minty white
+                        "background-dark": "#0B1610",
+                        "surface-light": "rgba(255, 255, 255, 0.95)",
+                        "text-main": "#1E2923", // Dark green-grey
+                        "text-muted": "#5C7064", // Muted sage grey
+                        "accent": "#A3C9A8", // Light Mint accent
+                    },
+                    backgroundImage: {
+                        'gradient-q': 'linear-gradient(135deg, #355E3B 0%, #558B60 100%)', // Sage gradient
+                        'gradient-surface': 'linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(240,245,241,0.9) 100%)'
+                    },
+                    fontFamily: {
+                        "display": ["Fraunces", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(53, 94, 59, 0.15)', // Green-tinted shadow
+                        'glow': '0 0 20px rgba(116, 165, 127, 0.3)',
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }.bg-noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23355E3B' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.6);
+        }
+        .details-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.4s ease-out;
+        }
+        .group:hover .details-content,
+        .group:focus-within .details-content, 
+        .peer:checked ~ .details-content {
+            grid-template-rows: 1fr;
+        }.expanded-demo {
+            grid-template-rows: 1fr !important;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-text-main font-body antialiased min-h-screen relative flex flex-col">
+<div class="bg-noise"></div>
+<header class="sticky top-0 z-40 bg-primary shadow-lg pt-6 pb-6 px-6">
+<div class="flex justify-between items-center mb-6">
+<button class="p-2 -ml-2 text-white/90 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-4">
+<button class="p-2 text-white/90 hover:text-white transition-colors relative">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-accent rounded-full shadow-glow"></span>
+</button>
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center overflow-hidden border border-white/20 ring-2 ring-white/10">
+<img class="w-full h-full object-cover" data-alt="User profile portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVJB8Cg8FjPl1DXyFI32uIwGakyyHpwup3NUstj0Jb09FBF4JI69n8i6hX-LJJnDzHsIJ5_aoWuC2Nrjq6P4NslEiMYfUbrlspCxHOzXLaKeZ0vAevELRQbvrYyKBnv2uQK8gOlhlnS7LopAYHDGz9Z-FuHf_hWUxfD11uOG9emk4attAU0VthVb1h9LX7aTgq-s9HpZZxAkksFqNnKw3eAJAnNgHAkQRZaxJtYziA1lYE_VhlvuQfgUmEPkxK5zpz2BRApYHvP6lE"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-white/10 text-white/90 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase border border-white/20 backdrop-blur-sm">R&amp;D Update</span>
+</div>
+<h1 class="font-display text-4xl font-semibold text-white leading-tight tracking-tight">The Pipeline</h1>
+<p class="text-white/70 text-base max-w-md font-light leading-relaxed">
+                Natural harmony meets scientific rigor. Tracking our progress in botanical genetics.
+            </p>
+</div>
+</header>
+<main class="flex-1 px-4 py-6 w-full max-w-3xl mx-auto space-y-4 pb-24 z-10 relative -mt-4">
+<div class="grid grid-cols-2 gap-3 mb-6">
+<div class="glass-card p-4 rounded-lg shadow-soft flex flex-col items-center justify-center text-center gap-1 border-t-4 border-t-primary">
+<span class="text-3xl font-display font-medium text-primary">12</span>
+<span class="text-xs uppercase tracking-wider text-text-muted font-bold">Active Trials</span>
+</div>
+<div class="glass-card p-4 rounded-lg shadow-soft flex flex-col items-center justify-center text-center gap-1 border-t-4 border-t-primary-light">
+<span class="text-3xl font-display font-medium text-primary-light">Phase 2</span>
+<span class="text-xs uppercase tracking-wider text-text-muted font-bold">Lead Stage</span>
+</div>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2 no-scrollbar mb-4">
+<button class="px-5 py-2.5 bg-gradient-q text-white rounded-full text-sm font-bold whitespace-nowrap shadow-soft hover:shadow-glow transition-all">All Programs</button>
+<button class="px-5 py-2.5 bg-white text-text-muted border border-transparent hover:border-primary/20 hover:text-primary rounded-full text-sm font-medium whitespace-nowrap transition-colors">Botanical</button>
+<button class="px-5 py-2.5 bg-white text-text-muted border border-transparent hover:border-primary/20 hover:text-primary rounded-full text-sm font-medium whitespace-nowrap transition-colors">Metabolic</button>
+<button class="px-5 py-2.5 bg-white text-text-muted border border-transparent hover:border-primary/20 hover:text-primary rounded-full text-sm font-medium whitespace-nowrap transition-colors">Neurology</button>
+</div>
+<div class="glass-card rounded-lg shadow-soft overflow-hidden transition-all duration-300 group border-l-4 border-l-primary">
+<div class="p-5 flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="w-3 h-3 rounded-full bg-primary-light animate-pulse"></div>
+<div class="absolute -inset-1 bg-primary-light/20 rounded-full animate-ping"></div>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-0.5">
+<h3 class="font-display text-lg font-semibold text-primary">QG-301</h3>
+<span class="text-[10px] bg-primary-light/10 text-primary-light px-2 py-0.5 rounded-full font-bold uppercase tracking-wide border border-primary-light/20">Phase 2</span>
+</div>
+<p class="text-sm text-text-muted font-medium">Osteoporosis &amp; Bone Density</p>
+</div>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors transform rotate-180 text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="details-content expanded-demo">
+<div class="overflow-hidden">
+<div class="px-5 pb-6 pt-0 space-y-6 border-t border-dashed border-slate-200 mt-2">
+<div class="relative h-44 w-full rounded-xl overflow-hidden mt-6 bg-gradient-to-br from-green-50 to-emerald-50 flex items-center justify-center p-4 border border-green-100/50">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
+<div class="flex items-center gap-6 relative z-10">
+<div class="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center border-2 border-primary-light/30 relative">
+<div class="absolute inset-0 rounded-full bg-primary-light/5"></div>
+<span class="material-symbols-outlined text-primary-light">circle</span>
+</div>
+<div class="flex-1 h-[2px] bg-gradient-to-r from-primary-light/30 to-primary/30 w-16 relative">
+<div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white border-2 border-primary-light shadow-sm"></div>
+</div>
+<div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary/5 to-primary/10 shadow-lg shadow-green-900/5 flex items-center justify-center border-2 border-primary backdrop-blur-sm relative overflow-hidden">
+<div class="absolute w-full h-full bg-gradient-to-tr from-transparent via-white/40 to-transparent opacity-50"></div>
+<span class="material-symbols-outlined text-primary text-4xl">eco</span>
+</div>
+</div>
+<span class="absolute bottom-3 left-4 text-[10px] text-primary/60 font-bold uppercase tracking-widest">Stem Cell → Osteoblast</span>
+</div>
+<div class="space-y-2">
+<h4 class="text-sm font-bold text-primary uppercase tracking-wide">Mechanism of Action</h4>
+<p class="text-sm text-text-main/80 leading-relaxed">
+                                Promoting natural bone density regeneration via Wnt pathway activation. This mimics the body's youthful repair signals rather than inhibiting resorption.
+                            </p>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-xs font-bold text-text-muted uppercase tracking-wider">
+<span>Phase 1</span>
+<span class="text-primary-light">Phase 2</span>
+<span>Phase 3</span>
+</div>
+<div class="h-3 bg-slate-100 rounded-full w-full relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 bg-gradient-to-r from-primary to-primary-light w-[60%] rounded-full shadow-[0_2px_10px_rgba(116,165,127,0.4)]">
+<div class="absolute right-1 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-white rounded-full"></div>
+</div>
+<div class="absolute left-[33%] top-1/2 -translate-y-1/2 w-2 h-2 bg-white border-2 border-primary rounded-full z-10 shadow-sm"></div>
+<div class="absolute left-[66%] top-1/2 -translate-y-1/2 w-2 h-2 bg-white border-2 border-slate-300 rounded-full z-10"></div>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="text-xs text-text-muted">Est. Completion: Q4 2024</span>
+<button class="text-xs text-primary font-bold hover:text-primary-light flex items-center gap-1 transition-colors">
+                                    Full Data <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-lg shadow-soft overflow-hidden transition-all duration-300 hover:shadow-md cursor-pointer group/item border-l-4 border-l-transparent hover:border-l-amber-200">
+<div class="p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-amber-300 shadow-sm"></div>
+<div>
+<div class="flex items-center gap-2 mb-0.5">
+<h3 class="font-display text-lg font-semibold text-text-main group-hover/item:text-primary transition-colors">QG-502</h3>
+<span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full font-bold uppercase tracking-wide border border-amber-200">Phase 1</span>
+</div>
+<p class="text-sm text-text-muted font-medium">Cellular Senescence</p>
+</div>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors text-text-muted group-hover/item:text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+<div class="glass-card rounded-lg shadow-soft overflow-hidden transition-all duration-300 hover:shadow-md cursor-pointer group/item border-l-4 border-l-transparent hover:border-l-slate-300">
+<div class="p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-slate-300 shadow-sm"></div>
+<div>
+<div class="flex items-center gap-2 mb-0.5">
+<h3 class="font-display text-lg font-semibold text-text-main group-hover/item:text-primary transition-colors">QG-110</h3>
+<span class="text-[10px] bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full font-bold uppercase tracking-wide border border-slate-200">Pre-Clinical</span>
+</div>
+<p class="text-sm text-text-muted font-medium">Metabolic Harmony</p>
+</div>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors text-text-muted group-hover/item:text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+<div class="glass-card rounded-lg shadow-soft overflow-hidden transition-all duration-300 hover:shadow-md cursor-pointer group/item border-l-4 border-l-transparent hover:border-l-slate-300">
+<div class="p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-slate-300 shadow-sm"></div>
+<div>
+<div class="flex items-center gap-2 mb-0.5">
+<h3 class="font-display text-lg font-semibold text-text-main group-hover/item:text-primary transition-colors">QG-715</h3>
+<span class="text-[10px] bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full font-bold uppercase tracking-wide border border-slate-200">Discovery</span>
+</div>
+<p class="text-sm text-text-muted font-medium">Circadian Rhythm Reset</p>
+</div>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 transition-colors text-text-muted group-hover/item:text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</div>
+</main>
+<div class="fixed bottom-24 right-4 z-30">
+<button class="bg-gradient-q hover:opacity-95 text-white rounded-xl shadow-lg shadow-primary/30 pl-4 pr-5 py-3 flex items-center gap-2 transition-all transform hover:scale-105 active:scale-95 group border border-white/10">
+<span class="material-symbols-outlined text-[20px] group-hover:rotate-12 transition-transform">handshake</span>
+<span class="font-bold text-sm tracking-wide">Partner with Us</span>
+</button>
+</div>
+<div class="fixed bottom-0 w-full z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-6 pb-6 pt-3 flex justify-between items-end shadow-[0_-5px_20px_rgba(0,0,0,0.03)]">
+<a class="flex flex-col items-center justify-end gap-1 text-text-muted hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:-translate-y-0.5 transition-transform">home</span>
+<span class="text-[10px] font-bold tracking-wide">Home</span>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-primary group" href="#">
+<span class="material-symbols-outlined text-[24px] filled">science</span>
+<span class="text-[10px] font-bold tracking-wide">Pipeline</span>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-text-muted hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:-translate-y-0.5 transition-transform">spa</span>
+<span class="text-[10px] font-bold tracking-wide">Health</span>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 text-text-muted hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[24px] group-hover:-translate-y-0.5 transition-transform">trending_up</span>
+<span class="text-[10px] font-bold tracking-wide">Invest</span>
+</a>
+</div>
+</body></html>

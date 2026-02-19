@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Qgenetics Hero &amp; Vision</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#20df40",
+              "primary-dark": "#18a830",
+              "background-light": "#f6f8f6",
+              "background-dark": "#112114",
+              "sage": {
+                50: '#f4f7f4',
+                100: '#e3ebe3',
+                200: '#c5d8c5',
+                300: '#9bbd9b',
+                400: '#729d72',
+                500: '#538153',
+                600: '#3f653f',
+                700: '#345134',
+                800: '#2a412a',
+                900: '#233623',
+              }
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"],
+              "serif": ["Playfair Display", "serif"],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom scrollbar for horizontal nav */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-sage-200 dark:border-sage-800 transition-colors duration-300">
+<div class="flex items-center justify-between px-4 h-16 max-w-7xl mx-auto w-full">
+<!-- Mobile Menu Icon -->
+<button class="text-slate-900 dark:text-slate-100 p-2 -ml-2 rounded-full hover:bg-sage-100 dark:hover:bg-sage-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">biotech</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Qgenetics</span>
+</div>
+<!-- Search Icon -->
+<button class="text-slate-900 dark:text-slate-100 p-2 -mr-2 rounded-full hover:bg-sage-100 dark:hover:bg-sage-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+</div>
+<!-- Horizontal Navigation -->
+<nav class="overflow-x-auto hide-scrollbar w-full border-t border-sage-100 dark:border-sage-800/50">
+<div class="flex px-4 min-w-max mx-auto max-w-7xl">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-slate-900 dark:text-white pb-3 pt-4 px-4 hover:bg-sage-50 dark:hover:bg-sage-900/30 transition-colors" href="#">
+<span class="text-xs font-bold tracking-[0.1em] uppercase">Rhythm</span>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-sage-600 dark:text-sage-300 hover:text-primary dark:hover:text-primary pb-3 pt-4 px-4 hover:bg-sage-50 dark:hover:bg-sage-900/30 transition-colors" href="#">
+<span class="text-xs font-bold tracking-[0.1em] uppercase">Science</span>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-sage-600 dark:text-sage-300 hover:text-primary dark:hover:text-primary pb-3 pt-4 px-4 hover:bg-sage-50 dark:hover:bg-sage-900/30 transition-colors" href="#">
+<span class="text-xs font-bold tracking-[0.1em] uppercase">Ritual</span>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-sage-600 dark:text-sage-300 hover:text-primary dark:hover:text-primary pb-3 pt-4 px-4 hover:bg-sage-50 dark:hover:bg-sage-900/30 transition-colors" href="#">
+<span class="text-xs font-bold tracking-[0.1em] uppercase">Expertise</span>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-sage-600 dark:text-sage-300 hover:text-primary dark:hover:text-primary pb-3 pt-4 px-4 hover:bg-sage-50 dark:hover:bg-sage-900/30 transition-colors" href="#">
+<span class="text-xs font-bold tracking-[0.1em] uppercase">Growth</span>
+</a>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Abstract microscopic cellular structures in soft sage green and white tones" class="h-full w-full object-cover opacity-80 dark:opacity-40" data-alt="Abstract microscopic cellular structures in soft sage green and white tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaTS7ILYL1qiZ7WD8nnGkUrZjFcdhV3grTsQPumND-qN8MnEUrsvlFnLnUGBNjLDh-YOXrM3IHVkoP7K-Uvd9458dzQl9ZIXZ97v__ePg54chpjjoB4m7ZU_S6CiXGwKxI1p7VZFf3mDkv3eQ0G5cC_1IJX5lqlBHR1R7j39XCkhs7ew2QpekZgPig9dVDQhjlxgfhjfOXKZoWIrEZGO8KpWq-7qaSkVGfLuanK3DVc6okPu0QUIdwDoSWJyM0_i3tHFcLAMxRQWDh"/>
+<div class="absolute inset-0 bg-gradient-to-b from-white/30 via-white/10 to-background-light dark:from-background-dark/30 dark:via-background-dark/50 dark:to-background-dark"></div>
+</div>
+<div class="relative z-10 px-6 py-24 md:py-32 flex flex-col items-center text-center max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/60 dark:bg-black/40 backdrop-blur-sm border border-sage-200 dark:border-sage-700 mb-8 shadow-sm">
+<span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-bold tracking-widest text-sage-800 dark:text-sage-200 uppercase">Now Enrolling Phase III</span>
+</div>
+<h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-medium text-slate-900 dark:text-white leading-[1.1] tracking-tight mb-6">
+                    Restoring the <br/> <span class="italic text-sage-700 dark:text-sage-300">Rhythm</span> of Life
+                </h1>
+<p class="text-lg md:text-xl text-slate-700 dark:text-slate-300 max-w-md mx-auto mb-10 font-light leading-relaxed">
+                    Pioneering the future of longevity through precision bioscience. We don't just treat aging; we harmonize it.
+                </p>
+<button class="group relative flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary dark:hover:bg-primary hover:text-slate-900 dark:hover:text-slate-900 transition-all duration-300 shadow-lg hover:shadow-primary/25">
+<span class="text-sm font-bold tracking-wider uppercase">Explore the Pipeline</span>
+<span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Precision Bioscience Section -->
+<section class="px-6 py-16 md:py-24 bg-background-light dark:bg-background-dark relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-sage-200/30 dark:bg-sage-900/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="flex flex-col gap-6">
+<span class="text-primary text-xs font-bold tracking-[0.2em] uppercase">Precision Bioscience</span>
+<h2 class="font-serif text-3xl md:text-4xl text-slate-900 dark:text-white leading-tight">
+                        Soft Aging Solutions
+                    </h2>
+<div class="w-12 h-1 bg-primary rounded-full"></div>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                        We decode the biological clock to extend healthspan, not just lifespan. Our approach harmonizes with the body's natural rhythms, offering a gentler, more sustainable path to cellular rejuvenation.
+                    </p>
+<ul class="space-y-4 mt-4">
+<li class="flex items-start gap-3">
+<div class="flex-shrink-0 mt-1 text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white text-sm">Cellular Repair</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Restoring mitochondrial function at the source.</p>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<div class="flex-shrink-0 mt-1 text-primary">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-900 dark:text-white text-sm">Genetic Harmony</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Epigenetic reprogramming without invasive therapies.</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Cards Grid -->
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-white dark:bg-sage-900/40 p-6 rounded-2xl border border-sage-100 dark:border-sage-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-4 mb-4">
+<div class="p-3 bg-sage-50 dark:bg-sage-800 rounded-xl text-sage-600 dark:text-sage-300">
+<span class="material-symbols-outlined">genetics</span>
+</div>
+<h3 class="font-serif text-xl text-slate-900 dark:text-white">Genomic Stability</h3>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Targeting the 9 hallmarks of aging with proprietary molecular compounds.</p>
+</div>
+<div class="bg-white dark:bg-sage-900/40 p-6 rounded-2xl border border-sage-100 dark:border-sage-800 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center gap-4 mb-4">
+<div class="p-3 bg-sage-50 dark:bg-sage-800 rounded-xl text-sage-600 dark:text-sage-300">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<h3 class="font-serif text-xl text-slate-900 dark:text-white">Metabolic Fluidity</h3>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Enhancing nutrient sensing pathways to mimic caloric restriction benefits.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision / Statistics Section -->
+<section class="py-20 bg-sage-50 dark:bg-sage-900/20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-serif text-3xl md:text-5xl text-slate-900 dark:text-white mb-6">
+                        A New Horizon for the Aging Era
+                    </h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        As the global population shifts, Qgenetics is positioned to redefine what it means to grow older.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Stat 1 -->
+<div class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-2xl shadow-sm border border-sage-100 dark:border-sage-800">
+<div class="text-primary mb-2">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<span class="text-5xl font-serif font-bold text-slate-900 dark:text-white mb-2">2.1B</span>
+<span class="text-xs font-bold tracking-widest text-sage-500 uppercase mb-4">Demographic Shift</span>
+<p class="text-sm text-slate-600 dark:text-slate-400">People over 60 by 2050, doubling the current senior population worldwide.</p>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-2xl shadow-sm border border-sage-100 dark:border-sage-800 relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/5 dark:bg-primary/10 scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-500"></div>
+<div class="relative z-10 flex flex-col items-center">
+<div class="text-primary mb-2">
+<span class="material-symbols-outlined text-4xl">vital_signs</span>
+</div>
+<span class="text-5xl font-serif font-bold text-slate-900 dark:text-white mb-2">40%</span>
+<span class="text-xs font-bold tracking-widest text-sage-500 uppercase mb-4">Efficacy</span>
+<p class="text-sm text-slate-600 dark:text-slate-400">Reduction in cellular senescence markers in our Phase II clinical trials.</p>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="flex flex-col items-center text-center p-6 bg-white dark:bg-background-dark rounded-2xl shadow-sm border border-sage-100 dark:border-sage-800">
+<div class="text-primary mb-2">
+<span class="material-symbols-outlined text-4xl">hourglass_disabled</span>
+</div>
+<span class="text-5xl font-serif font-bold text-slate-900 dark:text-white mb-2">+12</span>
+<span class="text-xs font-bold tracking-widest text-sage-500 uppercase mb-4">Healthspan Years</span>
+<p class="text-sm text-slate-600 dark:text-slate-400">Projected increase in quality of life years based on current pipeline projections.</p>
+</div>
+</div>
+<!-- Bottom CTA -->
+<div class="mt-16 flex justify-center">
+<a class="inline-flex items-center text-sm font-bold text-slate-900 dark:text-white border-b-2 border-primary pb-1 hover:text-primary transition-colors" href="#">
+                        READ THE WHITE PAPER
+                        <span class="material-symbols-outlined text-base ml-1">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</body></html>

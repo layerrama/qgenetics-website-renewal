@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sage Contact &amp; Support Access</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7C9A92", // Sage Green
+                        "primary-dark": "#5D7A72", // Darker Sage
+                        "accent": "#9EB8B0", // Light Sage
+                        "background-light": "#F0F4F2", // Sage White
+                        "background-dark": "#1A2624", // Dark Greenish Grey
+                        "surface-glass": "rgba(255, 255, 255, 0.7)",
+                        "surface-glass-dark": "rgba(26, 38, 36, 0.7)",
+                        "success": "#10B981",
+                        "silver": "#E2E8F0",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "mono": ["Space Mono", "monospace"],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                },
+            },
+        }
+    </script>
+<style>body {
+            font-family: "Space Grotesk", sans-serif;
+            -webkit-font-smoothing: antialiased
+        }
+        .glass-panel {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(124, 154, 146, 0.15)
+        }
+        .dark .glass-panel {
+            background: linear-gradient(135deg, rgba(26, 38, 36, 0.8) 0%, rgba(26, 38, 36, 0.6) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3)
+        }.input-group {
+            position: relative
+        }
+        .input-field {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #E2E8F0;
+            padding: 1.5rem 0 0.5rem 0;
+            width: 100%;
+            outline: none;
+            transition: border-color 0.3s ease
+        }
+        .input-field:focus {
+            border-bottom-color: #7C9A92;box-shadow: none;
+        }
+        .input-label {
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            color: #64748B;
+            font-size: 1rem
+        }
+        .input-field:focus ~ .input-label, .input-field:not(:placeholder-shown) ~ .input-label {
+            top: 0;
+            font-size: 0.75rem;
+            color: #7C9A92;font-family: "Space Mono", monospace
+        }.toggle-bg {
+            transition: background-color 0.3s ease
+        }.scanlines {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.02) 50%, rgba(0, 0, 0, 0.02));
+            background-size: 100% 4px;
+            pointer-events: none
+        }@keyframes pulse-green {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+        .btn-success {
+            background-color: #10B981 !important;
+            animation: pulse-green 2s infinite
+        }.bg-blur-container {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDFgbIy-FxvMzDv9nPHAQNLL0Pc2DJmkRmwmkPjQxWL77p4o1EUnqgAiG7yDBykJqepTU8WppBpoxzWXR_Q2pTsOT8tQz7qUCFZmwHReTzMftsk8hh9eAHJ5MnTkH9MDJeaROPZBH0oIj1EKErWHEGO4B4qB5hUklztL1VgntA3Yfl4rGpU25uobgPWSExG-GkjYmBIyl8jwxjXKtswALKaEN1stjU8Fuk_xkhwxN74CF0FH294AcQAOzQoZ78_9M0gh4ovkBL4gIj4);
+            background-size: cover;
+            background-position: center
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col relative overflow-hidden">
+<div class="fixed inset-0 z-0 bg-blur-container data-[alt='Abstract blurred view of a modern medical laboratory with blue lighting']">
+<div class="absolute inset-0 bg-[#354f49]/60 backdrop-blur-md dark:bg-black/60"></div>
+<div class="absolute inset-0 scanlines"></div>
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/30 rounded-full blur-[100px] animate-pulse"></div>
+<div class="absolute top-1/2 -left-20 w-72 h-72 bg-accent/20 rounded-full blur-[80px]"></div>
+</div>
+<main class="relative z-10 flex-1 flex flex-col items-center justify-center p-4 w-full max-w-md mx-auto min-h-screen py-12">
+<div class="text-center mb-8 w-full flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+<span class="text-xs font-mono text-white/90 tracking-wider">SECURE TRANSMISSION</span>
+</div>
+<div class="mb-4 w-64">
+<img alt="Q genetics Logo" class="w-full h-auto drop-shadow-lg brightness-0 invert opacity-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAxWDKWV0-P6RdyOUKqXFMYzSOMPPcu7S8V7ELPYaC4x3mW-NuLYMCz84dZDsDleVdZDZ32TvFRm_jis4YDVrbT19Run3sk02Ehff4F3VfVYTwbybvEOjSiMLOJI3wrNxidGMhojeCXcv43_jbJEUiDouatkXAHZBzKSqDwDD1_mbNJWUPx2ENk8wGpFtAu5EvuXo75pntndKKGb15_eG-yc72Fmdo3B1uDK9X669Tc5jtAHVjTJ6DvvTzoZUc5gpoSqmD7jiWUK-Q"/>
+</div>
+<p class="text-white/70 text-sm font-light mt-2 max-w-xs mx-auto">
+                Request access to proprietary clinical data and financial forecasts.
+            </p>
+</div>
+<div class="glass-panel w-full rounded-2xl p-1 shadow-2xl overflow-hidden">
+<div class="flex p-1 bg-slate-100/50 dark:bg-slate-900/50 rounded-xl mb-6 mx-4 mt-4 relative">
+<div class="w-1/2 text-center relative z-10">
+<button class="w-full py-2.5 text-sm font-semibold text-primary dark:text-white bg-white dark:bg-slate-800 shadow-sm rounded-lg transition-all duration-300">
+                        Public Access
+                    </button>
+</div>
+<div class="w-1/2 text-center relative z-10">
+<button class="w-full py-2.5 text-sm font-medium text-slate-500 hover:text-slate-700 dark:text-slate-400 flex items-center justify-center gap-2 transition-colors">
+                        Partner Portal
+                        <span class="material-symbols-outlined text-[16px]">lock</span>
+</button>
+</div>
+</div>
+<div class="px-6 pb-8 pt-2">
+<form class="space-y-6">
+<div class="input-group">
+<input class="input-field text-slate-900 dark:text-white placeholder-transparent" id="fullname" placeholder="Full Name" type="text"/>
+<label class="input-label" for="fullname">Full Name</label>
+</div>
+<div class="input-group">
+<input class="input-field text-slate-900 dark:text-white placeholder-transparent" id="institution" placeholder="Institution / Fund" type="text"/>
+<label class="input-label" for="institution">Institution / Fund</label>
+</div>
+<div class="input-group">
+<input class="input-field text-slate-900 dark:text-white placeholder-transparent" id="email" placeholder="Corporate Email" type="email"/>
+<label class="input-label" for="email">Corporate Email</label>
+</div>
+<div class="input-group pt-4">
+<label class="block text-xs font-mono text-slate-500 dark:text-slate-400 mb-2 uppercase tracking-wider">Inquiry Vector</label>
+<div class="relative">
+<select class="w-full bg-transparent border-0 border-b border-slate-200 dark:border-slate-700 py-2 pl-0 pr-8 text-slate-900 dark:text-white focus:ring-0 focus:border-primary text-sm appearance-none cursor-pointer">
+<option>Series B Allocation</option>
+<option>Clinical Data Request</option>
+<option>Media / Press</option>
+<option>Partnership (Pharma)</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-0 text-slate-500">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div class="h-2"></div>
+<button class="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-bold rounded-xl text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-200 overflow-hidden shadow-lg shadow-primary/30" type="button">
+<span class="absolute right-0 top-0 h-full w-12 bg-white/10 skew-x-12 -translate-x-20 group-hover:translate-x-60 transition-transform duration-700 ease-in-out"></span>
+<div class="flex items-center gap-2">
+<span>Request Access</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</button>
+</form>
+<div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700/50 flex flex-col items-center gap-2">
+<div class="flex items-center gap-4 text-slate-400">
+<span class="material-symbols-outlined text-[20px]" title="Encrypted">shield</span>
+<span class="material-symbols-outlined text-[20px]" title="Verified">verified_user</span>
+<span class="material-symbols-outlined text-[20px]" title="Global Access">language</span>
+</div>
+<p class="text-[10px] font-mono text-slate-400 dark:text-slate-500 text-center leading-relaxed">
+                        ENCRYPTION: AES-256 // QGENETICS GATEWAY v1.0<br/>
+                        Authorized personnel only. All access logged.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<div class="relative z-20 flex-shrink-0">
+<div class="flex gap-2 border-t border-white/10 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md px-4 pb-6 pt-3 shadow-[0_-4px_20px_-2px_rgba(0,0,0,0.1)]">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">home</span>
+<p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">science</span>
+<p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Model</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">timeline</span>
+<p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Pipeline</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">monitoring</span>
+<p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Market</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<span class="material-symbols-outlined font-bold">lock</span>
+<p class="text-[10px] font-bold leading-normal tracking-[0.015em]">Access</p>
+</a>
+</div>
+</div>
+</body></html>
