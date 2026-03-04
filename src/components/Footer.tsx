@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -14,10 +16,9 @@ export default function Footer() {
     <footer className="border-t border-slate-100 bg-slate-50 px-5 py-12 font-display dark:border-slate-800 dark:bg-slate-950">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-2 text-primary">
-            <span className="material-symbols-outlined">network_node</span>
-            <h4 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">{copy.brand}</h4>
-          </div>
+          <Link href="/" className="flex items-center" aria-label="Go to home">
+            <Image src="/logo.png" alt="Qgenetics Official Logo" width={1620} height={540} className="h-8 w-auto" />
+          </Link>
           <span className="text-xs font-bold uppercase tracking-[0.16em] text-primary">{cta.kicker}</span>
           <h3 className={`text-2xl font-bold leading-tight text-slate-900 dark:text-white ${lang === "kr" ? "word-keep-all" : ""}`}>
             {cta.title}
