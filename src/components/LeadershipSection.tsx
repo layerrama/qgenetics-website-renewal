@@ -7,6 +7,7 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function LeadershipSection() {
   const { lang } = useLanguage();
   const copy = content[lang].leadership;
+  const loweredProfiles = new Set(["/chang.png", "/lee.png"]);
 
   return (
     <section className="bg-white px-4 py-12 font-display sm:px-5">
@@ -20,7 +21,14 @@ export default function LeadershipSection() {
           {copy.members.map((member) => (
             <article key={member.name} className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
               <div className="relative mx-auto h-36 w-36 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 sm:h-40 sm:w-40">
-                <Image src={member.image} alt={member.name} fill className="object-cover" sizes="160px" />
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                  style={{ objectPosition: loweredProfiles.has(member.image) ? "center 35%" : "center center" }}
+                  sizes="160px"
+                />
               </div>
               <div className="mt-4 min-w-0">
                 <h3 className={`break-words text-xl font-extrabold leading-snug text-slate-900 ${lang === "kr" ? "word-keep-all" : ""}`}>
