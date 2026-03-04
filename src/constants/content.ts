@@ -116,24 +116,37 @@ export const content = {
       }
     },
     leadership: {
-      kicker: "Team",
-      title: "Leadership & Global Ecosystem",
-      desc: "Driven by experts from top institutions, shaping the future of bio-healthcare.",
-      leaders: [
+      kicker: "LEADERSHIP",
+      title: "Harvard Medical School Alumni, Global Top-Tier Expert Group",
+      members: [
         {
-          name: "Moon-Seok Jang",
+          name: "Moon-seok Jang, Ph.D.",
           role: "Chief Executive Officer",
-          tags: ["Harvard MBA", "Strategic Planning"]
+          resume: [
+            "Leading Expert in MSC Research",
+            "Former Senior Researcher & Visiting Professor, Harvard Medical School",
+            "Current Professor, Kyung Hee University",
+            "Ph.D. in Biological Sciences, Seoul National University"
+          ]
         },
         {
-          name: "Min-Seok Lee",
-          role: "Chief Scientific Officer",
-          tags: ["SNU Ph.D", "Bio-Engineering"]
-        },
-        {
-          name: "Tae-Hee Lee",
+          name: "Tae-hee Lee, Ph.D.",
           role: "Chief Technology Officer",
-          tags: ["CJ Group Ex-VP", "Global Markets"]
+          resume: [
+            "Stem Cell Differentiation & R&BD Expert",
+            "Former Instructor, Harvard Medical School",
+            "Former Head of Bio Business, HLB & HLB Life Science",
+            "Former Head of BD, GeneOne Life Science"
+          ]
+        },
+        {
+          name: "Jin-ah Kwon",
+          role: "Chief Development Officer",
+          resume: [
+            "Bio Business Development & Pipeline Strategy Expert",
+            "Former Strategic Planning Leader, GI Innovation",
+            "Head of Global Out-Licensing & Commercialization Portfolio"
+          ]
         }
       ]
     },
@@ -264,24 +277,37 @@ export const content = {
       }
     },
     leadership: {
-      kicker: "팀",
-      title: "리더십 & 글로벌 생태계",
-      desc: "최고 기관 출신 전문가들이 바이오 헬스케어의 미래를 만들어갑니다.",
-      leaders: [
+      kicker: "LEADERSHIP",
+      title: "하버드 의대 출신, 글로벌 탑티어 전문가 그룹",
+      members: [
         {
-          name: "Moon-Seok Jang",
-          role: "최고경영책임자 (CEO)",
-          tags: ["Harvard MBA", "전략기획"]
+          name: "장문석 Ph.D.",
+          role: "Chief Executive Officer",
+          resume: [
+            "MSC(중간엽 줄기세포) 연구 최고 권위자",
+            "(전) 하버드 의과대학 선임연구원 및 방문교수",
+            "(현) 경희대학교 교수",
+            "서울대학교 생명과학부 박사"
+          ]
         },
         {
-          name: "Min-Seok Lee",
-          role: "최고과학책임자 (CSO)",
-          tags: ["SNU Ph.D", "바이오엔지니어링"]
+          name: "이태희 Ph.D.",
+          role: "Chief Technology Officer",
+          resume: [
+            "줄기세포 분화 및 신약 R&BD 전문가",
+            "(전) 하버드 의과대학 전임강사",
+            "(전) HLB 및 HLB생명과학 바이오사업총괄 본부장",
+            "(전) 진원생명과학 사업개발본부장"
+          ]
         },
         {
-          name: "Tae-Hee Lee",
-          role: "최고기술책임자 (CTO)",
-          tags: ["CJ Group Ex-VP", "글로벌 시장"]
+          name: "권진아",
+          role: "Chief Development Officer",
+          resume: [
+            "바이오 사업개발(BD) 및 파이프라인 전략 전문가",
+            "(전) 지아이이노베이션 전략기획본부 핵심 리더",
+            "글로벌 기술수출(L/O) 및 상업화 포트폴리오 총괄"
+          ]
         }
       ]
     },
