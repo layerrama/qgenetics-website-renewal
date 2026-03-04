@@ -5,7 +5,10 @@ import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
   const { lang } = useLanguage();
+  const cta = content[lang].cta;
   const copy = content[lang].footer;
+  const phoneHref = `tel:${copy.phone.replace(/[^+\d]/g, "")}`;
+  const emailHref = `mailto:${copy.email}`;
 
   return (
     <footer className="border-t border-slate-100 bg-slate-50 px-5 py-12 font-display dark:border-slate-800 dark:bg-slate-950">
@@ -15,21 +18,26 @@ export default function Footer() {
             <span className="material-symbols-outlined">network_node</span>
             <h4 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">{copy.brand}</h4>
           </div>
-          <h3 className="text-2xl font-bold leading-tight text-slate-900 dark:text-white">{copy.heading}</h3>
-          <p className="max-w-[300px] text-sm leading-relaxed text-slate-500 dark:text-slate-400">{copy.desc}</p>
+          <span className="text-xs font-bold uppercase tracking-[0.16em] text-primary">{cta.kicker}</span>
+          <h3 className={`text-2xl font-bold leading-tight text-slate-900 dark:text-white ${lang === "kr" ? "word-keep-all" : ""}`}>
+            {cta.title}
+          </h3>
+          <p className={`max-w-[520px] text-sm leading-relaxed text-slate-500 dark:text-slate-400 ${lang === "kr" ? "word-keep-all" : ""}`}>
+            {cta.desc}
+          </p>
         </div>
 
         <div className="flex flex-col gap-3">
           <a
             className="flex items-center gap-3 text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary"
-            href="mailto:info@qgenetics.com"
+            href={emailHref}
           >
             <span className="material-symbols-outlined text-[20px]">mail</span>
             <span className="text-sm font-medium">{copy.email}</span>
           </a>
           <a
             className="flex items-center gap-3 text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary"
-            href="tel:+82212345678"
+            href={phoneHref}
           >
             <span className="material-symbols-outlined text-[20px]">call</span>
             <span className="text-sm font-medium">{copy.phone}</span>

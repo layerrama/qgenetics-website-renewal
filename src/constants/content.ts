@@ -124,13 +124,19 @@ export const content = {
         }
       ]
     },
+    cta: {
+      kicker: "PARTNER WITH US",
+      title: "Pioneering the Soft Aging™ Paradigm",
+      desc:
+        "Join us in redefining the paradigm of aging. Qgenetics is leading the shift from mere symptom management to fundamental biological restoration. Partner with us to accelerate the clinical realization of our first-in-class osteo-anabolic therapeutics and proprietary AI-MSC platform."
+    },
     footer: {
       brand: "Qgenetics",
-      heading: "Shaping the Future Together",
-      desc: "Pioneering the next generation of bio-healthcare solutions for a better tomorrow.",
-      email: "info@qgenetics.com",
-      phone: "+82 2-1234-5678",
-      address: "Gangnam-gu, Seoul, South Korea",
+      heading: "",
+      desc: "",
+      email: "qgenetics@qgenetics.co.kr",
+      phone: "+82 2 10 7290 3030",
+      address: "#401, Research and Business Development Foundation, 26, Kyungheedae-ro, Dongdaemun-gu, Seoul, Republic of Korea",
       copyright: "© 2024 Qgenetics Inc. All rights reserved."
     }
   },
@@ -259,13 +265,19 @@ export const content = {
         }
       ]
     },
+    cta: {
+      kicker: "PARTNER WITH US",
+      title: "소프트에이징™ 패러다임의 선도",
+      desc:
+        "노화의 패러다임을 재정의하는 여정에 함께 하십시오. 큐제네틱스는 단순한 증상 관리를 넘어, 인체 본연의 생물학적 자생력을 복원합니다. 세계 최초의 경구용 골형성 혁신 신약과 AI-MSC 플랫폼의 임상적 실현을 가속화할 글로벌 파트너를 기다립니다."
+    },
     footer: {
       brand: "큐제네틱스",
-      heading: "함께 만드는 더 나은 미래",
-      desc: "더 나은 내일을 위한 차세대 바이오 헬스케어 솔루션을 선도합니다.",
-      email: "info@qgenetics.com",
-      phone: "+82 2-1234-5678",
-      address: "서울특별시 강남구",
+      heading: "",
+      desc: "",
+      email: "qgenetics@qgenetics.co.kr",
+      phone: "+82 2 10 7290 3030",
+      address: "서울특별시 동대문구 경희대로 26, (구)이과대학 동관 401호",
       copyright: "© 2024 Qgenetics Inc. All rights reserved."
     }
   }
