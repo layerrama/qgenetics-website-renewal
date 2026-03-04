@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -17,21 +18,23 @@ export default function LeadershipSection() {
 
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {copy.members.map((member) => (
-            <article key={member.name} className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
-              <div className="aspect-[3/4] w-full rounded-xl bg-slate-200" />
-              <div className="mt-4 min-w-0">
+            <article key={member.name} className="min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-t-2xl bg-slate-100">
+                <Image src={member.image} alt={member.name} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+              </div>
+              <div className="min-w-0 p-4 sm:p-5">
                 <h3 className={`break-words text-xl font-extrabold leading-snug text-slate-900 ${lang === "kr" ? "word-keep-all" : ""}`}>
                   {member.name}
                 </h3>
                 <p className="mt-1 break-words text-sm font-bold leading-relaxed text-primary">{member.role}</p>
+                <ul className="mt-4 list-disc space-y-2 pl-5 text-[13px] leading-relaxed text-slate-600 sm:text-sm">
+                  {member.resume.map((line) => (
+                    <li key={line} className={`break-words ${lang === "kr" ? "word-keep-all" : ""}`}>
+                      {line}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="mt-4 list-disc space-y-2 pl-5 text-[13px] leading-relaxed text-slate-600 sm:text-sm">
-                {member.resume.map((line) => (
-                  <li key={line} className={`break-words ${lang === "kr" ? "word-keep-all" : ""}`}>
-                    {line}
-                  </li>
-                ))}
-              </ul>
             </article>
           ))}
         </div>

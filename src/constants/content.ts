@@ -96,6 +96,7 @@ export const content = {
         {
           name: "Moon-seok Jang, Ph.D.",
           role: "Chief Executive Officer",
+          image: "/chang.png",
           resume: [
             "Leading Expert in MSC Research",
             "Current Professor, Kyung Hee University",
@@ -107,6 +108,7 @@ export const content = {
         {
           name: "Tae-hee Lee, Ph.D.",
           role: "Chief Technology Officer",
+          image: "/lee.png",
           resume: [
             "Stem Cell Differentiation Expert",
             "Former Instructor, Harvard Medical School",
@@ -116,6 +118,7 @@ export const content = {
         {
           name: "Jin-ah Kwon",
           role: "Chief Development Officer",
+          image: "/kwon.png",
           resume: [
             "Business Development Expert",
             "Former Strategic Planning Team Leader, GI Innovation",
@@ -239,6 +242,7 @@ export const content = {
         {
           name: "장문석 CEO / Ph.D.",
           role: "Chief Executive Officer",
+          image: "/chang.png",
           resume: [
             "MSC(중간엽 줄기세포)연구 전문가",
             "(현) 경희대학교 교수",
@@ -250,6 +254,7 @@ export const content = {
         {
           name: "이태희 전무이사 / CTO",
           role: "Chief Technology Officer",
+          image: "/lee.png",
           resume: [
             "줄기세포 분화 전문가",
             "(전) Harvard 의과대학 전임강사",
@@ -259,6 +264,7 @@ export const content = {
         {
           name: "권진아 전무이사 / CDO",
           role: "Chief Development Officer",
+          image: "/kwon.png",
           resume: [
             "사업개발 전문가",
             "(전) 지아이이노베이션, 전략기획본부 팀장",
