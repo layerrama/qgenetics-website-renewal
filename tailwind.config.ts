@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}"
@@ -8,21 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#1ce362",
-        background: "#f6f8f6",
-        foreground: "#102216",
-        surface: "#ffffff",
-        sage: {
-          50: "#f4f7f5",
-          100: "#e3ebe5",
-          200: "#c5d6cb",
-          600: "#4d7a5e",
-          800: "#2d4034",
-          900: "#111813"
-        }
+        primary: "#136dec",
+        "primary-light": "#63B3ED",
+        "primary-dark": "#1A365D",
+        "background-light": "#F0F7FF",
+        "background-dark": "#0A1625",
+        surface: "rgba(255, 255, 255, 0.95)",
+        "text-main": "#2D3748",
+        "text-muted": "#718096",
+        accent: "#90CDF4",
+        "soft-gradient-start": "#EBF8FF",
+        "soft-gradient-end": "#FFFFFF"
+      },
+      fontFamily: {
+        display: ["var(--font-display)", "sans-serif"],
+        serif: ["var(--font-serif)", "serif"],
+        grotesk: ["var(--font-grotesk)", "sans-serif"],
+        sans: ["var(--font-display)", "sans-serif"]
       },
       boxShadow: {
-        soft: "0 10px 30px rgba(16, 34, 22, 0.08)"
+        soft: "0 10px 40px -10px rgba(19, 109, 236, 0.15)"
       }
     }
   },

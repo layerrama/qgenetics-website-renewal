@@ -1,25 +1,37 @@
-import Header from "@/components/header";
-import AgingEraSection from "@/components/sections/aging-era-section";
-import GrowthContactSection from "@/components/sections/growth-contact-section";
-import HeroSection from "@/components/sections/hero-section";
-import LifestyleSection from "@/components/sections/lifestyle-section";
-import PhilosophySection from "@/components/sections/philosophy-section";
-import PipelineSection from "@/components/sections/pipeline-section";
-import StorySection from "@/components/sections/story-section";
-import TeamSection from "@/components/sections/team-section";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import LeadershipSection from "@/components/LeadershipSection";
+import LifestyleSection from "@/components/LifestyleSection";
+import Navbar from "@/components/Navbar";
+import PipelineSection from "@/components/PipelineSection";
+import PhilosophyScrollSection from "@/components/PhilosophyScrollSection";
+import TechSection from "@/components/TechSection";
 
 export default function Home() {
   return (
-    <div className="app-shell">
-      <Header />
-      <HeroSection />
-      <AgingEraSection />
-      <PhilosophySection />
-      <StorySection />
-      <PipelineSection />
-      <LifestyleSection />
-      <TeamSection />
-      <GrowthContactSection />
+    <div className="app-shell" id="top">
+      <Navbar />
+      <section id="hero" className="scroll-mt-28">
+        <HeroSection />
+      </section>
+      <section id="philosophy" className="scroll-mt-28">
+        <PhilosophyScrollSection />
+      </section>
+      <section id="platform" className="scroll-mt-28">
+        <TechSection />
+      </section>
+      <section id="pipeline" className="scroll-mt-28">
+        <PipelineSection />
+      </section>
+      <section id="healthcare" className="scroll-mt-28">
+        <LifestyleSection />
+      </section>
+      <section id="leadership" className="scroll-mt-28">
+        <LeadershipSection />
+      </section>
+      <section id="investors" className="scroll-mt-28">
+        <Footer />
+      </section>
     </div>
   );
 }

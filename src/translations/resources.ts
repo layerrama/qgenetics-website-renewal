@@ -26,7 +26,10 @@ export const resources = {
       agingEra: {
         title: "A New Horizon for the Aging Era",
         body:
-          "The world is aging faster than ever. Projected global population aged 60 or over will reach 3.1 billion by 2100. This shift creates a critical, unmet need for innovative medical solutions."
+          "The world is aging faster than ever. Projected global population aged 60 or over will reach 3.1 billion by 2100. This shift creates a critical, unmet need for innovative medical solutions.",
+        yearLabel: "Projection Year",
+        populationLabel: "Aged 60+ Population",
+        demandLabel: "Urgent Demand for Innovative Medical Solutions"
       },
       philosophy: {
         title: "Soft Aging — Beyond Anti-Aging",
@@ -143,7 +146,10 @@ export const resources = {
       agingEra: {
         title: "고령화 시대의 새로운 지평",
         body:
-          "우리는 그 어느 때보다 빠르게 전개되는 고령화 시대에 살고 있습니다. 2100년 전 세계 60세 이상 인구는 31억 명에 달할 것으로 예측됩니다. 이러한 급격한 변화는 고령층의 삶의 질을 보장할 수 있는 혁신적인 의료 솔루션을 요구합니다."
+          "우리는 그 어느 때보다 빠르게 전개되는 고령화 시대에 살고 있습니다. 2100년 전 세계 60세 이상 인구는 31억 명에 달할 것으로 예측됩니다. 이러한 급격한 변화는 고령층의 삶의 질을 보장할 수 있는 혁신적인 의료 솔루션을 요구합니다.",
+        yearLabel: "예측 시점",
+        populationLabel: "60세 이상 인구",
+        demandLabel: "혁신적 의료 솔루션에 대한 긴급 수요"
       },
       philosophy: {
         title: "소프트에이징 — 안티에이징 그 이상의 가치",

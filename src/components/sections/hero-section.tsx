@@ -22,9 +22,12 @@ export default function HeroSection() {
             <span className="mt-1 block text-[#ccffd8]">{t("hero.titleLine2")}</span>
           </h1>
           <p className="mx-auto mt-4 max-w-[312px] text-sm leading-relaxed text-[#e9f6ec] [text-shadow:0_2px_10px_rgba(0,0,0,0.35)]">{t("hero.description")}</p>
-          <button className="mt-7 rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#111813] transition hover:bg-[#1ce362]">
+          <a
+            href="#pipeline"
+            className="mt-7 inline-block rounded-full bg-white px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#111813] transition hover:bg-[#1ce362]"
+          >
             {t("common.explore")}
-          </button>
+          </a>
         </div>
       </section>
     </AnimatedSection>
