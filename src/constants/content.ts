@@ -98,28 +98,30 @@ export const content = {
           role: "Chief Executive Officer",
           resume: [
             "Leading Expert in MSC Research",
-            "Former Senior Researcher & Visiting Professor, Harvard Medical School",
             "Current Professor, Kyung Hee University",
-            "Ph.D. in Biological Sciences, Seoul National University"
+            "Ph.D. in Biological Sciences, Seoul National University",
+            "Former Senior Researcher, Harvard Medical School",
+            "Former Visiting Professor, Harvard Medical School"
           ]
         },
         {
           name: "Tae-hee Lee, Ph.D.",
           role: "Chief Technology Officer",
           resume: [
-            "Stem Cell Differentiation & R&BD Expert",
+            "Stem Cell Differentiation Expert",
             "Former Instructor, Harvard Medical School",
-            "Former Head of Bio Business, HLB & HLB Life Science",
-            "Former Head of BD, GeneOne Life Science"
+            "Former Research Professor, Yonsei University / Kyung Hee University"
           ]
         },
         {
           name: "Jin-ah Kwon",
           role: "Chief Development Officer",
           resume: [
-            "Bio Business Development & Pipeline Strategy Expert",
-            "Former Strategic Planning Leader, GI Innovation",
-            "Head of Global Out-Licensing & Commercialization Portfolio"
+            "Business Development Expert",
+            "Former Strategic Planning Team Leader, GI Innovation",
+            "Former Head of Bio Business & BD, HLB",
+            "Former Head of Bio Business, HLB Life Science",
+            "Former Head of BD, GeneOne Life Science"
           ]
         }
       ]
@@ -235,32 +237,34 @@ export const content = {
       title: "하버드 의대 출신, 글로벌 탑티어 전문가 그룹",
       members: [
         {
-          name: "장문석 Ph.D.",
+          name: "장문석 CEO / Ph.D.",
           role: "Chief Executive Officer",
           resume: [
-            "MSC(중간엽 줄기세포) 연구 최고 권위자",
-            "(전) 하버드 의과대학 선임연구원 및 방문교수",
+            "MSC(중간엽 줄기세포)연구 전문가",
             "(현) 경희대학교 교수",
-            "서울대학교 생명과학부 박사"
+            "서울대학교 생명과학부 박사",
+            "Harvard 의대 선임연구원",
+            "Harvard 의대 방문교수"
           ]
         },
         {
-          name: "이태희 Ph.D.",
+          name: "이태희 전무이사 / CTO",
           role: "Chief Technology Officer",
           resume: [
-            "줄기세포 분화 및 신약 R&BD 전문가",
-            "(전) 하버드 의과대학 전임강사",
-            "(전) HLB 및 HLB생명과학 바이오사업총괄 본부장",
-            "(전) 진원생명과학 사업개발본부장"
+            "줄기세포 분화 전문가",
+            "(전) Harvard 의과대학 전임강사",
+            "(전) 연세대학교 / 경희대학교 연구교수"
           ]
         },
         {
-          name: "권진아",
+          name: "권진아 전무이사 / CDO",
           role: "Chief Development Officer",
           resume: [
-            "바이오 사업개발(BD) 및 파이프라인 전략 전문가",
-            "(전) 지아이이노베이션 전략기획본부 핵심 리더",
-            "글로벌 기술수출(L/O) 및 상업화 포트폴리오 총괄"
+            "사업개발 전문가",
+            "(전) 지아이이노베이션, 전략기획본부 팀장",
+            "(전) HLB 바이오사업총괄, 사업개발부문장",
+            "(전) HLB 생명과학, 바이오사업본부장",
+            "(전) 진원생명과학(주), 사업개발본부장"
           ]
         }
       ]
