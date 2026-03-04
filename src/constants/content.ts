@@ -117,7 +117,7 @@ export const content = {
           ]
         },
         {
-          name: "Jin-ah Kwon",
+          name: "Jin-ah Kwon, Ph.D.",
           role: "Chief Development Officer",
           image: "/kwon.png",
           resume: [
@@ -264,7 +264,7 @@ export const content = {
           ]
         },
         {
-          name: "권진아 전무이사 / CDO",
+          name: "권진아 전무이사 / CDO / Ph.D.",
           role: "Chief Development Officer",
           image: "/kwon.png",
           resume: [
