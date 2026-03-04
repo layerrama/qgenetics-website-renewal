@@ -29,13 +29,13 @@ export const content = {
       },
       {
         kicker: "THE ANSWER",
-        title: "Soft Aging™: The Science of Autonomy.",
+        title: "Soft Aging™: The Science of Autonomy",
         desc: "We chose a different path. Do not fight time. Soft Aging™ respects your biological ecosystem. Instead of temporary chemical dependence, we awaken the body’s innate ability to heal and overcome disease."
       }
     ],
     tech: {
       kicker: "CORE PLATFORM",
-      title: "The Engine of Soft Aging: AI-MSC.",
+      title: "The Engine of Soft Aging: AI-MSC",
       desc:
         "We design the destiny of stem cells. Qgenetics' proprietary AI-MSC platform integrates AI Big Data mining with advanced Medichem to perfectly control the differentiation of Mesenchymal Stem Cells (MSC).",
       features: [
@@ -95,19 +95,19 @@ export const content = {
       title: "Global Top-Tier R&D and Business Development Experts",
       members: [
         {
-          name: "Moon-seok Jang, Ph.D.",
+          name: "Moon-seok Jang, PhD",
           role: "Chief Executive Officer",
           image: "/chang.png",
           resume: [
             "Leading Expert in MSC Research",
             "Current Professor, Kyung Hee University",
-            "Ph.D. in Biological Sciences, Seoul National University",
+            "PhD in Biological Sciences, Seoul National University",
             "Former Senior Researcher, Harvard Medical School",
             "Former Visiting Professor, Harvard Medical School"
           ]
         },
         {
-          name: "Tae-hee Lee, Ph.D.",
+          name: "Tae-hee Lee, PhD",
           role: "Chief Technology Officer",
           image: "/lee.png",
           resume: [
@@ -117,7 +117,7 @@ export const content = {
           ]
         },
         {
-          name: "Jin-ah Kwon, Ph.D.",
+          name: "Jin-ah Kwon, PhD",
           role: "Chief Development Officer",
           image: "/kwon.png",
           resume: [
@@ -156,7 +156,7 @@ export const content = {
     },
     hero: {
       kicker: "안티에이징을 넘어",
-      title: "소프트에이징™ 시대의 시작.",
+      title: "소프트에이징™ 시대의 시작",
       subcopyPre:
         "시간을 거스르는 대신, 인체의 자생력을 극대화합니다. ",
       subcopyStrong: "큐제네틱스의 소프트에이징™",
@@ -171,18 +171,18 @@ export const content = {
     philosophy: [
       {
         kicker: "THE LIMIT",
-        title: "억누를 것인가, 무너질 것인가.",
+        title: "억누를 것인가, 무너질 것인가",
         desc: "2050년 60세 이상 인구 21억 명 시대. 억지로 노화를 막는 기존의 '안티에이징'은 잦은 부작용과 함께 근본적 치료의 한계를 드러냈습니다. 증상을 덮는 것만으로는 건강 수명(Healthspan)을 지킬 수 없습니다."
       },
       {
         kicker: "THE ANSWER",
-        title: "소프트에이징™, 자생(Autonomy)의 과학.",
+        title: "소프트에이징™, 자생(Autonomy)의 과학",
         desc: "우리는 다른 길을 선택했습니다. 시간과 싸우지 마십시오. 소프트에이징™은 신체 생태계를 존중합니다. 일시적인 화학적 의존 대신, 인체 스스로 질병을 극복하고 회복하는 본연의 생명력을 다시 깨웁니다."
       }
     ],
     tech: {
       kicker: "CORE PLATFORM",
-      title: "소프트에이징의 심장, AI-MSC.",
+      title: "소프트에이징의 심장, AI-MSC",
       desc:
         "우리는 줄기세포의 운명을 설계합니다. 큐제네틱스의 독자적인 AI-MSC 플랫폼은 인공지능 빅데이터 마이닝(AI Big Data mining)과 의약화학(Medichem) 기술을 융합하여, 중간엽 줄기세포(MSC)의 분화 방향을 가장 완벽하게 통제합니다.",
       features: [
@@ -242,7 +242,7 @@ export const content = {
       title: "글로벌 혁신 신약 및 사업개발 전문가 그룹",
       members: [
         {
-          name: "장문석 CEO / Ph.D.",
+          name: "장문석 CEO / PhD",
           role: "Chief Executive Officer",
           image: "/chang.png",
           resume: [
@@ -264,7 +264,7 @@ export const content = {
           ]
         },
         {
-          name: "권진아 전무이사 / CDO / Ph.D.",
+          name: "권진아 전무이사 / CDO / PhD",
           role: "Chief Development Officer",
           image: "/kwon.png",
           resume: [
