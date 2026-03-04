@@ -33,11 +33,6 @@ export const content = {
         kicker: "THE ANSWER",
         title: "Soft Aging™: The Science of Autonomy.",
         desc: "We chose a different path. Do not fight time. Soft Aging™ respects your biological ecosystem. Instead of temporary chemical dependence, we awaken the body’s innate ability to heal and overcome disease."
-      },
-      {
-        kicker: "THE ENGINE",
-        title: "Precision Stem Cell Control.",
-        desc: "Philosophy becomes reality through perfect control. Our AI-MSC platform precisely guides the differentiation of stem cells. Empowering the body to rebuild its own damaged tissues-this is the technological reality of Qgenetics."
       }
     ],
     tech: {
@@ -186,11 +181,6 @@ export const content = {
         kicker: "THE ANSWER",
         title: "소프트에이징™, 자생(Autonomy)의 과학.",
         desc: "우리는 다른 길을 선택했습니다. 시간과 싸우지 마십시오. 소프트에이징™은 신체 생태계를 존중합니다. 일시적인 화학적 의존 대신, 인체 스스로 질병을 극복하고 회복하는 본연의 생명력을 다시 깨웁니다."
-      },
-      {
-        kicker: "THE ENGINE",
-        title: "정밀 줄기세포 분화 제어.",
-        desc: "철학을 현실로 만드는 것은 완벽한 통제력입니다. 우리는 AI-MSC 플랫폼을 통해 줄기세포의 분화 방향을 정밀하게 유도합니다. 손상된 조직을 신체 스스로 재건하게 만드는 것. 이것이 큐제네틱스 기술의 실체입니다."
       }
     ],
     tech: {

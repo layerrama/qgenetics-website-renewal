@@ -36,7 +36,7 @@ export default function PhilosophyScrollSection() {
     };
   }, [items.length]);
 
-  const cardImages = useMemo(() => [null, designImages.philosophyStory, designImages.pipelineHero], []);
+  const cardImages = useMemo(() => [null, designImages.philosophyStory], []);
 
   return (
     <section className="relative overflow-hidden bg-background-light dark:bg-background-dark">

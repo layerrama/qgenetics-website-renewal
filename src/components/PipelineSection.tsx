@@ -17,7 +17,7 @@ export default function PipelineSection() {
   const stages = ["전임상", "1상", "2상", "3상"] as const;
 
   return (
-    <section className="w-full bg-background-light font-display text-slate-900 dark:bg-background-dark dark:text-slate-100">
+    <section className="w-full overflow-x-hidden bg-background-light font-display text-slate-900 dark:bg-background-dark dark:text-slate-100">
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <div className="mb-6">
           <span className="inline-flex rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-[11px] font-bold tracking-[0.16em] text-primary">
@@ -26,22 +26,29 @@ export default function PipelineSection() {
           <h2 className="mt-3 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white md:text-3xl">{copy.title}</h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
           {copy.items.map((item) => (
-            <article key={item.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-900">
+            <article
+              key={item.id}
+              className="w-full min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-900"
+            >
               <p className="text-[11px] font-bold tracking-[0.16em] text-primary">{item.kicker}</p>
-              <h3 className={`mt-2 text-xl font-extrabold leading-tight text-slate-900 dark:text-white ${lang === "kr" ? "word-keep-all" : ""}`}>
+              <h3
+                className={`mt-2 break-words text-xl font-extrabold leading-tight text-slate-900 dark:text-white ${
+                  lang === "kr" ? "word-keep-all" : ""
+                }`}
+              >
                 {item.title}
               </h3>
 
               <div className="mt-3">
                 {item.id === "qg3030" ? (
-                  <span className="inline-flex items-center gap-1 rounded-full border border-green-600/30 bg-green-100 px-3 py-1 text-xs font-bold text-green-700 dark:bg-green-900/30 dark:text-green-300">
+                  <span className="inline-flex max-w-full flex-wrap items-center gap-1 rounded-full border border-green-600/30 bg-green-100 px-3 py-1 text-xs font-bold text-green-700 dark:bg-green-900/30 dark:text-green-300">
                     <span className="material-symbols-outlined text-sm">check_circle</span>
                     {item.status}
                   </span>
                 ) : (
-                  <span className="inline-flex rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                  <span className="inline-flex max-w-full flex-wrap rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
                     {item.status}
                   </span>
                 )}
