@@ -18,11 +18,11 @@ export default function LeadershipSection() {
 
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {copy.members.map((member) => (
-            <article key={member.name} className="min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-t-2xl bg-slate-100">
-                <Image src={member.image} alt={member.name} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+            <article key={member.name} className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
+              <div className="relative mx-auto h-36 w-36 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 sm:h-40 sm:w-40">
+                <Image src={member.image} alt={member.name} fill className="object-cover" sizes="160px" />
               </div>
-              <div className="min-w-0 p-4 sm:p-5">
+              <div className="mt-4 min-w-0">
                 <h3 className={`break-words text-xl font-extrabold leading-snug text-slate-900 ${lang === "kr" ? "word-keep-all" : ""}`}>
                   {member.name}
                 </h3>

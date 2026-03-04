@@ -54,6 +54,7 @@ export const content = {
     pipeline: {
       kicker: "PIPELINE",
       title: "Soft Aging™ Pipeline",
+      timelineLabels: ["Pre-clinical", "Phase 1", "Phase 2", "Phase 3"],
       items: [
         {
           id: "qg3030",
@@ -91,7 +92,7 @@ export const content = {
     },
     leadership: {
       kicker: "LEADERSHIP",
-      title: "Harvard Medical School Alumni, Global Top-Tier Expert Group",
+      title: "Global Top-Tier R&D and Business Development Experts",
       members: [
         {
           name: "Moon-seok Jang, Ph.D.",
@@ -200,6 +201,7 @@ export const content = {
     pipeline: {
       kicker: "PIPELINE",
       title: "소프트에이징™ 파이프라인",
+      timelineLabels: ["전임상", "임상 1상", "임상 2상", "임상 3상"],
       items: [
         {
           id: "qg3030",
@@ -237,7 +239,7 @@ export const content = {
     },
     leadership: {
       kicker: "LEADERSHIP",
-      title: "하버드 의대 출신, 글로벌 탑티어 전문가 그룹",
+      title: "글로벌 혁신 신약 및 사업개발 전문가 그룹",
       members: [
         {
           name: "장문석 CEO / Ph.D.",

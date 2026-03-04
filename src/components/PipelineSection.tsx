@@ -12,7 +12,7 @@ const pipelineCardImages: Record<string, string> = {
 export default function PipelineSection() {
   const { lang } = useLanguage();
   const copy = content[lang].pipeline;
-  const stages = ["전임상", "1상", "2상", "3상"] as const;
+  const stages = copy.timelineLabels;
 
   return (
     <section className="w-full overflow-x-hidden bg-background-light font-display text-slate-900 dark:bg-background-dark dark:text-slate-100">
