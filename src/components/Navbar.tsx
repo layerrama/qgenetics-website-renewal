@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -10,12 +12,16 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-background-dark/95">
       <div className="flex items-center justify-between px-4 py-3">
-        <div className="flex items-center gap-2">
-          <div className="rounded-lg bg-primary/10 p-1.5">
-            <span className="material-symbols-outlined text-[24px] text-primary">genetics</span>
-          </div>
-          <h2 className="text-lg font-bold leading-tight tracking-tight text-slate-900 dark:text-white">Qgenetics</h2>
-        </div>
+        <Link href="/" className="flex items-center" aria-label="Go to home">
+          <Image
+            src="/logo.png"
+            alt="Qgenetics Official Logo"
+            width={1620}
+            height={540}
+            priority
+            className="h-8 w-auto md:h-10"
+          />
+        </Link>
         <div className="flex items-center gap-2">
           <button
             type="button"
