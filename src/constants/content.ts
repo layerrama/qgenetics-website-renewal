@@ -17,7 +17,7 @@ export const content = {
       subcopyStrong: "",
       subcopyPost:
         "",
-      button: "Soft Aging™ Philosophy ↓",
+      button: "Soft Aging™ Philosophy",
       contextLabel: "Context",
       contextTitle: "Facing the Super-Aging Reality",
       contextDesc:
@@ -170,7 +170,7 @@ export const content = {
       subcopyStrong: "큐제네틱스의 소프트에이징™",
       subcopyPost:
         "은 독자적인 AI-MSC 플랫폼과 줄기세포 분화 기술을 통해 근본적인 생체 리듬을 복원합니다.",
-      button: "소프트에이징™ 철학 ↓",
+      button: "소프트에이징™ 철학",
       contextLabel: "배경",
       contextTitle: "초고령 사회의 현실과 마주하다",
       contextDesc:

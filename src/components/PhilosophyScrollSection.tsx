@@ -49,7 +49,8 @@ export default function PhilosophyScrollSection() {
               ref={(el) => {
                 refs.current[index] = el;
               }}
-              className="min-h-[58vh] snap-center px-4 pt-2"
+              id={item.kicker === "THE ANSWER" ? "the-answer" : undefined}
+              className="min-h-[58vh] snap-center scroll-mt-28 px-4 pt-2"
             >
               <div className="sticky top-24 mx-auto w-full max-w-3xl">
                 <article

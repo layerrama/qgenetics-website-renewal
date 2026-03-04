@@ -38,12 +38,12 @@ export default function HeroSection() {
               {copy.subcopyStrong ? <span className="text-white font-bold">{copy.subcopyStrong}</span> : null}
               {copy.subcopyPost}
             </p>
-            <button className="group relative mt-4 flex h-12 w-full items-center justify-center gap-2 rounded-full bg-white px-8 text-primary shadow-xl transition-all hover:scale-105 hover:bg-blue-50 hover:shadow-2xl active:scale-95 sm:w-auto">
+            <a
+              href="#the-answer"
+              className="relative mt-4 flex h-12 w-full items-center justify-center rounded-full bg-white px-8 text-primary shadow-xl transition-all hover:scale-105 hover:bg-blue-50 hover:shadow-2xl active:scale-95 sm:w-auto"
+            >
               <span className="text-sm font-bold tracking-wide">{copy.button}</span>
-              <span className="material-symbols-outlined text-lg transition-transform group-hover:translate-y-0.5">
-                south
-              </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
