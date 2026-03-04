@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import LeadershipSection from "@/components/LeadershipSection";
-import LifestyleSection from "@/components/LifestyleSection";
 import Navbar from "@/components/Navbar";
 import PipelineSection from "@/components/PipelineSection";
 import PhilosophyScrollSection from "@/components/PhilosophyScrollSection";
@@ -22,9 +21,6 @@ export default function Home() {
       </section>
       <section id="pipeline" className="scroll-mt-28">
         <PipelineSection />
-      </section>
-      <section id="healthcare" className="scroll-mt-28">
-        <LifestyleSection />
       </section>
       <section id="leadership" className="scroll-mt-28">
         <LeadershipSection />

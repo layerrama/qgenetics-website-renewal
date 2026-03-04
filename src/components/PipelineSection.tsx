@@ -6,9 +6,7 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const pipelineCardImages: Record<string, string> = {
   qbone:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCBkG2Nj1EpqrCYOQ5i2ZSTT8xlUCy1UxXQ3EavyYTHOWG1XvgehPTRIiiYXH8CqyarZu34-gZ8s32uQHMgcEYKhmwgyLt6hZekxZCmS-AQ6gkZr1FLGgzykw7xWi0RYzaX2vtjg0fv8FR2MdpkPzaZhLaKBYtdMi9bK06_1SJm2_YpWXRIU4iFXoRHb8l8UNp1aqpTBVMaLlsY_dLTJc3-jLDCjJcNGQWlekZ5I4-2w6BdgKZ7FXracavaI9d76XOv_j4DzaF3i7pc",
-  antiviral:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuBMVdU9plmY6X7CiyluRPfGBnPWBeDrNSWm89c6g05xJRugnQLHRcITbqtoKhfQkMf2LXqgUqrkTpppW-fI2fbHnXNsuuV9xeZfa5odTK2AFnwy67BsTlUGbX5B7LHWf1wLRLqQGm_-P3xrGGPKNNEzzGg4AjQdK1vxBR1k1kO7tCNr7VKz7wiz8tvDJcmYVRLOUYWg-e7FcXqtXFy21MrPAltbPo0klbZUwSvBwWvKGcrVZbuYw8bER3olkj_bK-gvuk_r4Iu1wUbF"
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuCBkG2Nj1EpqrCYOQ5i2ZSTT8xlUCy1UxXQ3EavyYTHOWG1XvgehPTRIiiYXH8CqyarZu34-gZ8s32uQHMgcEYKhmwgyLt6hZekxZCmS-AQ6gkZr1FLGgzykw7xWi0RYzaX2vtjg0fv8FR2MdpkPzaZhLaKBYtdMi9bK06_1SJm2_YpWXRIU4iFXoRHb8l8UNp1aqpTBVMaLlsY_dLTJc3-jLDCjJcNGQWlekZ5I4-2w6BdgKZ7FXracavaI9d76XOv_j4DzaF3i7pc"
 };
 
 export default function PipelineSection() {
@@ -18,7 +16,7 @@ export default function PipelineSection() {
 
   return (
     <section className="w-full overflow-x-hidden bg-background-light font-display text-slate-900 dark:bg-background-dark dark:text-slate-100">
-      <div className="mx-auto w-full max-w-4xl px-4 py-10">
+      <div className="mx-auto w-full max-w-6xl px-4 py-10">
         <div className="mb-6">
           <span className="inline-flex rounded-full border border-primary/25 bg-primary/10 px-3 py-1 text-[11px] font-bold tracking-[0.16em] text-primary">
             {copy.kicker}
@@ -26,7 +24,7 @@ export default function PipelineSection() {
           <h2 className="mt-3 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white md:text-3xl">{copy.title}</h2>
         </div>
 
-        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {copy.items.map((item) => (
             <article
               key={item.id}

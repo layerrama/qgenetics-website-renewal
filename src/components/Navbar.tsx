@@ -55,18 +55,8 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a className="text-xs font-bold text-slate-500 transition-colors hover:text-primary dark:text-slate-400" href="#healthcare">
-              {copy.nav.healthcare}
-            </a>
-          </li>
-          <li>
             <a className="text-xs font-bold text-slate-500 transition-colors hover:text-primary dark:text-slate-400" href="#leadership">
               {copy.nav.leadership}
-            </a>
-          </li>
-          <li>
-            <a className="text-xs font-bold text-slate-500 transition-colors hover:text-primary dark:text-slate-400" href="#investors">
-              {copy.nav.investors}
             </a>
           </li>
         </ul>

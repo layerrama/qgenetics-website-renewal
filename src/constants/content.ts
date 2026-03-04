@@ -4,9 +4,7 @@ export const content = {
       philosophy: "PHILOSOPHY",
       platform: "PLATFORM",
       pipeline: "PIPELINE",
-      healthcare: "HEALTHCARE",
       leadership: "LEADERSHIP",
-      investors: "INVESTORS",
       contact: "CONTACT"
     },
     hero: {
@@ -63,7 +61,7 @@ export const content = {
           title: "QG3030 (Osteoporosis)",
           status: "Phase 1 Completed (Entering Phase 2)",
           desc: [
-            "The world’s first ADCY-targeted oral therapeutic.",
+            "The world’s first-in-class oral osteoanabolic therapeutic.",
             "Directly promotes osteoblast differentiation.",
             "Proven exceptional safety in Phase 1 trials."
           ]
@@ -88,32 +86,8 @@ export const content = {
             "Superior osteoinductivity with zero risk of side effects."
           ],
           hasImage: true
-        },
-        {
-          id: "antiviral",
-          kicker: "PLATFORM",
-          title: "Anti-Viral Screening Platform",
-          status: "Platform Ready",
-          desc: ["Proprietary screening platform for anti-viral therapeutics."],
-          hasImage: true
         }
       ]
-    },
-    lifestyle: {
-      kicker: "Innovation",
-      title: "Daily Healthcare Ritual: QFORET",
-      heading: "Scientifically Proven",
-      desc:
-        "Our patented bio-fermentation process delivers purity and potency in every drop, ensuring maximum absorption and efficacy for your daily health.",
-      button: "Learn about QFORET",
-      features: {
-        patent: "Bio-Patent",
-        patentDesc: "Unique fermentation tech",
-        vegan: "100% Vegan",
-        veganDesc: "Plant-based ingredients",
-        global: "Global Standard",
-        globalDesc: "Certified excellence"
-      }
     },
     leadership: {
       kicker: "LEADERSHIP",
@@ -165,9 +139,7 @@ export const content = {
       philosophy: "철학",
       platform: "플랫폼",
       pipeline: "파이프라인",
-      healthcare: "헬스케어",
       leadership: "리더십",
-      investors: "투자자",
       contact: "문의"
     },
     hero: {
@@ -224,7 +196,7 @@ export const content = {
           title: "QG3030 (골다공증 혁신 신약)",
           status: "임상 1상 완료 (2상 진입 준비)",
           desc: [
-            "세계 최초 ADCY 타겟 경구용 치료제.",
+            "세계 최초의 경구용 골형성 촉진(Osteo-anabolic) 혁신 신약.",
             "조골세포 분화를 직접 촉진하며,",
             "임상 1상을 통해 탁월한 안전성을 입증했습니다."
           ]
@@ -249,32 +221,8 @@ export const content = {
             "부작용 위험 없이 압도적인 골유합능을 자랑합니다."
           ],
           hasImage: true
-        },
-        {
-          id: "antiviral",
-          kicker: "PLATFORM",
-          title: "항바이러스 스크리닝 플랫폼",
-          status: "플랫폼 구축 완료",
-          desc: ["신종 바이러스 대응을 위한 독자적 스크리닝 플랫폼."],
-          hasImage: true
         }
       ]
-    },
-    lifestyle: {
-      kicker: "혁신",
-      title: "데일리 헬스케어 루틴: QFORET",
-      heading: "과학으로 검증된 효능",
-      desc:
-        "특허 바이오 발효 공정을 통해 한 방울마다 순도와 효능을 높여, 일상 속 최대 흡수율과 효과를 제공합니다.",
-      button: "QFORET 자세히 보기",
-      features: {
-        patent: "바이오 특허",
-        patentDesc: "독자 발효 기술",
-        vegan: "100% 비건",
-        veganDesc: "식물성 원료 기반",
-        global: "글로벌 스탠다드",
-        globalDesc: "국제 인증 품질"
-      }
     },
     leadership: {
       kicker: "LEADERSHIP",
