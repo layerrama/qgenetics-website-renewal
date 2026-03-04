@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -86,13 +87,15 @@ export default function PipelineSection() {
                 </div>
               ) : null}
 
-              {"hasImage" in item && item.hasImage ? (
+              {"hasImage" in item && item.hasImage && pipelineCardImages[item.id] ? (
                 <div className="mt-4 overflow-hidden rounded-lg border border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800">
-                  <img
+                  <Image
                     src={pipelineCardImages[item.id]}
                     alt={item.title}
+                    width={1200}
+                    height={480}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="h-48 w-full object-cover"
-                    loading="lazy"
                   />
                 </div>
               ) : null}
