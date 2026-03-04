@@ -40,24 +40,25 @@ export default function PhilosophyScrollSection() {
 
   return (
     <section className="relative overflow-hidden bg-background-light dark:bg-background-dark">
-      <div className="relative snap-y snap-mandatory">
-        {items.map((item, index) => {
-          const isActive = activeIndex === index;
-          return (
-            <div
-              key={`${item.kicker}-${index}`}
-              ref={(el) => {
-                refs.current[index] = el;
-              }}
-              id={item.kicker === "THE ANSWER" ? "the-answer" : undefined}
-              className="min-h-[58vh] snap-center scroll-mt-28 px-4 pt-2"
-            >
-              <div className="sticky top-24 mx-auto w-full max-w-3xl">
-                <article
-                  className={`rounded-2xl border border-slate-200 bg-white p-6 shadow-xl transition-all duration-700 dark:border-slate-700 dark:bg-slate-900 md:p-10 ${
-                    isActive ? "opacity-100" : "opacity-40"
-                  }`}
-                >
+      <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
+        <div className="relative snap-y snap-mandatory">
+          {items.map((item, index) => {
+            const isActive = activeIndex === index;
+            return (
+              <div
+                key={`${item.kicker}-${index}`}
+                ref={(el) => {
+                  refs.current[index] = el;
+                }}
+                id={item.kicker === "THE ANSWER" ? "the-answer" : undefined}
+                className="min-h-[58vh] snap-center scroll-mt-28 pt-2"
+              >
+                <div className="sticky top-24 mx-auto w-full max-w-3xl">
+                  <article
+                    className={`rounded-2xl border border-slate-200 bg-white p-6 shadow-xl transition-all duration-700 dark:border-slate-700 dark:bg-slate-900 md:p-10 ${
+                      isActive ? "opacity-100" : "opacity-40"
+                    }`}
+                  >
                   <span className="inline-flex rounded-full border border-primary/30 bg-primary/15 px-3 py-1 text-[11px] font-bold tracking-[0.18em] text-primary">
                     {item.kicker}
                   </span>
@@ -134,11 +135,12 @@ export default function PhilosophyScrollSection() {
                       />
                     </div>
                   ) : null}
-                </article>
+                  </article>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   );

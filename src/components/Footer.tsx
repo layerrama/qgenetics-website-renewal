@@ -13,8 +13,8 @@ export default function Footer() {
   const emailHref = `mailto:${copy.email}`;
 
   return (
-    <footer className="border-t border-slate-100 bg-slate-50 px-5 py-12 font-display dark:border-slate-800 dark:bg-slate-950">
-      <div className="flex flex-col gap-8">
+    <footer className="border-t border-slate-100 bg-slate-50 py-12 font-display dark:border-slate-800 dark:bg-slate-950">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 md:px-8">
         <div className="flex flex-col gap-4">
           <Link href="/" className="flex items-center" aria-label="Go to home">
             <Image src="/logo.png" alt="Qgenetics Official Logo" width={1620} height={540} className="h-8 w-auto" />

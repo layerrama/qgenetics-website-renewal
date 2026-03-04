@@ -9,8 +9,8 @@ export default function LeadershipSection() {
   const copy = content[lang].leadership;
 
   return (
-    <section className="bg-white px-4 py-12 font-display sm:px-5">
-      <div className="mx-auto w-full max-w-6xl">
+    <section className="bg-white py-12 font-display">
+      <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
         <span className="text-xs font-bold uppercase tracking-wider text-primary">{copy.kicker}</span>
         <h2 className={`mt-2 text-2xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-3xl ${lang === "kr" ? "word-keep-all" : ""}`}>
           {copy.title}

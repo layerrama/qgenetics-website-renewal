@@ -23,28 +23,30 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-background-light via-transparent to-transparent opacity-90 dark:from-background-dark" />
           <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />
 
-          <div className="relative z-10 mx-auto mt-8 flex max-w-lg flex-col items-center gap-6">
-            <span className="inline-block rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-white shadow-lg drop-shadow-lg backdrop-blur-sm">
-              {copy.kicker}
-            </span>
-            <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-              {copy.title}
-            </h1>
-            <p
-              className={`mx-auto mt-4 max-w-2xl text-sm font-medium leading-relaxed text-blue-100 opacity-95 drop-shadow-lg md:text-lg ${
-                lang === "kr" ? "word-keep-all" : ""
-              }`}
-            >
-              {copy.subcopyPre}
-              {copy.subcopyStrong ? <span className="text-white font-bold">{copy.subcopyStrong}</span> : null}
-              {copy.subcopyPost}
-            </p>
-            <a
-              href="#the-answer"
-              className="relative mt-4 flex h-12 w-full items-center justify-center rounded-full bg-white px-8 text-primary shadow-xl transition-all hover:scale-105 hover:bg-blue-50 hover:shadow-2xl active:scale-95 sm:w-auto"
-            >
-              <span className="text-sm font-bold tracking-wide">{copy.button}</span>
-            </a>
+          <div className="relative z-10 mx-auto w-full max-w-7xl px-4 md:px-8">
+            <div className="mx-auto mt-8 flex max-w-lg flex-col items-center gap-6">
+              <span className="inline-block rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-white shadow-lg drop-shadow-lg backdrop-blur-sm">
+                {copy.kicker}
+              </span>
+              <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
+                {copy.title}
+              </h1>
+              <p
+                className={`mx-auto mt-4 max-w-2xl text-sm font-medium leading-relaxed text-blue-100 opacity-95 drop-shadow-lg md:text-lg ${
+                  lang === "kr" ? "word-keep-all" : ""
+                }`}
+              >
+                {copy.subcopyPre}
+                {copy.subcopyStrong ? <span className="text-white font-bold">{copy.subcopyStrong}</span> : null}
+                {copy.subcopyPost}
+              </p>
+              <a
+                href="#the-answer"
+                className="relative mt-4 flex h-12 w-full items-center justify-center rounded-full bg-white px-8 text-primary shadow-xl transition-all hover:scale-105 hover:bg-blue-50 hover:shadow-2xl active:scale-95 sm:w-auto"
+              >
+                <span className="text-sm font-bold tracking-wide">{copy.button}</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

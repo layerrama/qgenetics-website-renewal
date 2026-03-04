@@ -32,7 +32,7 @@ export default function TechSection() {
         />
       </div>
 
-      <div className="relative mx-auto w-full max-w-5xl px-4 py-14 md:py-20">
+      <div className="relative mx-auto w-full max-w-7xl px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex rounded-full border border-primary/40 bg-primary/15 px-3 py-1 text-xs font-bold tracking-[0.14em] text-primary">
             {copy.kicker}
