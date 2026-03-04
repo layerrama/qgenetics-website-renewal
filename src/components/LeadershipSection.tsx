@@ -7,10 +7,6 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function LeadershipSection() {
   const { lang } = useLanguage();
   const copy = content[lang].leadership;
-  const loweredProfilePosition: Record<string, string> = {
-    "/chang.png": "center 20%",
-    "/lee.png": "center 20%"
-  };
 
   return (
     <section className="bg-white px-4 py-12 font-display sm:px-5">
@@ -23,13 +19,12 @@ export default function LeadershipSection() {
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {copy.members.map((member) => (
             <article key={member.name} className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
-              <div className="relative mx-auto h-36 w-36 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 sm:h-40 sm:w-40">
+              <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover"
-                  style={{ objectPosition: loweredProfilePosition[member.image] ?? "center center" }}
+                  className="object-contain"
                   sizes="160px"
                 />
               </div>
