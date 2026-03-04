@@ -7,7 +7,10 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function LeadershipSection() {
   const { lang } = useLanguage();
   const copy = content[lang].leadership;
-  const loweredProfiles = new Set(["/chang.png", "/lee.png"]);
+  const loweredProfilePosition: Record<string, string> = {
+    "/chang.png": "center 20%",
+    "/lee.png": "center 20%"
+  };
 
   return (
     <section className="bg-white px-4 py-12 font-display sm:px-5">
@@ -26,7 +29,7 @@ export default function LeadershipSection() {
                   alt={member.name}
                   fill
                   className="object-cover"
-                  style={{ objectPosition: loweredProfiles.has(member.image) ? "center 35%" : "center center" }}
+                  style={{ objectPosition: loweredProfilePosition[member.image] ?? "center center" }}
                   sizes="160px"
                 />
               </div>
