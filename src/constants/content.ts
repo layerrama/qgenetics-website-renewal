@@ -95,7 +95,7 @@ export const content = {
       title: "Global Top-Tier R&D and Business Development Experts",
       members: [
         {
-          name: "Moon-seok Jang, PhD",
+          name: "Mun-seog, Chang",
           role: "Chief Executive Officer",
           image: "/chang.png",
           resume: [
@@ -141,7 +141,7 @@ export const content = {
       heading: "",
       desc: "",
       email: "qgenetics@qgenetics.co.kr",
-      phone: "+82 2 10 7290 3030",
+      phone: "+82 10 72903030",
       address: "#401, Research and Business Development Foundation, 26, Kyungheedae-ro, Dongdaemun-gu, Seoul, Republic of Korea",
       copyright: "© 2024 Qgenetics Inc. All rights reserved."
     }
@@ -288,7 +288,7 @@ export const content = {
       heading: "",
       desc: "",
       email: "qgenetics@qgenetics.co.kr",
-      phone: "+82 2 10 7290 3030",
+      phone: "+82 10 72903030",
       address: "서울특별시 동대문구 경희대로 26, (구)이과대학 동관 401호",
       copyright: "© 2024 Qgenetics Inc. All rights reserved."
     }
