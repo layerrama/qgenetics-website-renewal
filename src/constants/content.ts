@@ -121,7 +121,7 @@ export const content = {
         {
           name: "Jin-ah Kwon, PhD",
           role: "Chief Development Officer",
-          image: "/kwon.png",
+          image: "/kwon2.jpg",
           resume: [
             "Business Development Expert",
             "Former Strategic Planning Team Leader, GI Innovation",
@@ -270,7 +270,7 @@ export const content = {
         {
           name: "권진아 전무이사 / CDO / PhD",
           role: "Chief Development Officer",
-          image: "/kwon.png",
+          image: "/kwon2.jpg",
           resume: [
             "사업개발 전문가",
             "(전) 지아이이노베이션, 전략기획본부 팀장",
