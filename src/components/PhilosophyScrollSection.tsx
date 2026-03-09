@@ -22,7 +22,11 @@ export default function PhilosophyScrollSection() {
               <div className="h-full flex flex-col justify-between">
                 <div>
                   <span className="text-xl font-bold tracking-widest text-primary lg:text-2xl">{item.kicker}</span>
-                  <h3 className="mb-6 mt-4 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white lg:text-5xl">
+                  <h3
+                    className={`mb-6 mt-4 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white lg:text-5xl ${
+                      lang === "kr" ? "whitespace-pre-line" : ""
+                    }`}
+                  >
                     {item.title}
                   </h3>
                   <p className={`text-lg leading-relaxed text-slate-600 dark:text-slate-300 lg:text-xl ${lang === "kr" ? "word-keep-all" : ""}`}>

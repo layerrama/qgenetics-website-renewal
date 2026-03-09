@@ -53,7 +53,7 @@ export default function HeroSection() {
                 )}
               </h1>
               <p
-                className={`mx-auto mt-4 max-w-2xl text-sm font-medium leading-relaxed text-blue-100 opacity-95 drop-shadow-lg md:text-lg ${
+                className={`mx-auto mt-4 max-w-2xl text-base font-medium leading-relaxed text-blue-100 opacity-95 drop-shadow-lg md:text-lg ${
                   lang === "kr" ? "word-keep-all" : ""
                 }`}
               >

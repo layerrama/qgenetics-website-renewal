@@ -173,7 +173,7 @@ export const content = {
     philosophy: [
       {
         kicker: "THE LIMIT",
-        title: "억누를 것인가, 무너질 것인가",
+        title: "억누를 것인가,\n무너질 것인가",
         desc: "2050년 60세 이상 인구 21억 명 시대. 억지로 노화를 막는 기존의 '안티에이징'은 잦은 부작용과 함께 근본적 치료의 한계를 드러냈습니다. 증상을 덮는 것만으로는 건강 수명(Healthspan)을 지킬 수 없습니다."
       },
       {
@@ -258,7 +258,7 @@ export const content = {
           ]
         },
         {
-          name: "이태희 전무이사 / CTO",
+          name: "이태희 전무이사 / CTO / PhD",
           role: "Chief Technology Officer",
           image: "/lee.png",
           resume: [
