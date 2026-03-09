@@ -63,13 +63,13 @@ export default function PipelineSection() {
                 ))}
               </div>
 
-              {item.id === "qg3030" ? (
+              {"progressStage" in item ? (
                 <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800">
                   <div className="relative">
                     <div className="absolute left-0 right-0 top-3 h-0.5 bg-slate-300 dark:bg-slate-600" />
                     <div className="relative grid grid-cols-4 gap-2">
                       {stages.map((stage, stageIndex) => {
-                        const isCurrent = stageIndex === 1;
+                        const isCurrent = stageIndex === item.progressStage;
                         return (
                           <div key={stage} className="flex flex-col items-center text-center">
                             <span
