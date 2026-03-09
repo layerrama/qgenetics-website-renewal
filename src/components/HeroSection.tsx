@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -9,6 +10,19 @@ const heroImageUrl =
 export default function HeroSection() {
   const { lang } = useLanguage();
   const copy = content[lang].hero;
+  const focusPhrase = "Soft Aging™";
+  const hasFocusedTitle = lang === "en" && copy.title.includes(focusPhrase);
+  const titleLead = hasFocusedTitle ? copy.title.replace(focusPhrase, "").trim() : copy.title;
+
+  const renderWithSmallTm = (text: string) => {
+    const parts = text.split("™");
+    return parts.map((part, index) => (
+      <Fragment key={`${text}-${index}`}>
+        {part}
+        {index < parts.length - 1 ? <sup className="ml-0.5 align-super text-[0.48em] font-semibold">TM</sup> : null}
+      </Fragment>
+    ));
+  };
 
   return (
     <main className="relative flex w-full flex-col">
@@ -29,7 +43,14 @@ export default function HeroSection() {
                 {copy.kicker}
               </span>
               <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
-                {copy.title}
+                {hasFocusedTitle ? (
+                  <>
+                    <span className="block">{titleLead}</span>
+                    <span className="block">{renderWithSmallTm(focusPhrase)}</span>
+                  </>
+                ) : (
+                  renderWithSmallTm(copy.title)
+                )}
               </h1>
               <p
                 className={`mx-auto mt-4 max-w-2xl text-sm font-medium leading-relaxed text-blue-100 opacity-95 drop-shadow-lg md:text-lg ${
@@ -44,7 +65,7 @@ export default function HeroSection() {
                 href="#the-answer"
                 className="relative mt-4 flex h-12 w-full items-center justify-center rounded-full bg-white px-8 text-primary shadow-xl transition-all hover:scale-105 hover:bg-blue-50 hover:shadow-2xl active:scale-95 sm:w-auto"
               >
-                <span className="text-sm font-bold tracking-wide">{copy.button}</span>
+                <span className="text-sm font-bold tracking-wide">{renderWithSmallTm(copy.button)}</span>
               </a>
             </div>
           </div>
