@@ -5,6 +5,8 @@ import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
 const pipelineCardImages: Record<string, string> = {
+  qg3030: "/pipeline-qg3030-stem-bone.svg",
+  expansion: "/pipeline-obesity-stemcell.svg",
   qbone:
     "https://lh3.googleusercontent.com/aida-public/AB6AXuCBkG2Nj1EpqrCYOQ5i2ZSTT8xlUCy1UxXQ3EavyYTHOWG1XvgehPTRIiiYXH8CqyarZu34-gZ8s32uQHMgcEYKhmwgyLt6hZekxZCmS-AQ6gkZr1FLGgzykw7xWi0RYzaX2vtjg0fv8FR2MdpkPzaZhLaKBYtdMi9bK06_1SJm2_YpWXRIU4iFXoRHb8l8UNp1aqpTBVMaLlsY_dLTJc3-jLDCjJcNGQWlekZ5I4-2w6BdgKZ7FXracavaI9d76XOv_j4DzaF3i7pc"
 };
