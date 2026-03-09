@@ -97,7 +97,7 @@ export const content = {
       title: "Global Top-Tier R&D and Business Development Experts",
       members: [
         {
-          name: "Mun-seog, Chang",
+          name: "Mun-seog, Chang, PhD",
           role: "Chief Executive Officer",
           image: "/chang.png",
           resume: [
