@@ -62,7 +62,6 @@ export const content = {
           title: "QG3030 (Osteoporosis)",
           status: "Phase 1 Completed (Entering Phase 2)",
           progressStage: 1,
-          hasImage: true,
           desc: [
             "The world’s first-in-class oral osteoanabolic therapeutic.",
             "Directly promotes osteoblast differentiation.",
@@ -75,7 +74,6 @@ export const content = {
           title: "Obesity & Osteoarthritis",
           status: "Entering Phase 1",
           progressStage: 1,
-          hasImage: true,
           desc: [
             "• Obesity (QG30-OB): Reduces visceral fat without muscle loss.",
             "• Osteoarthritis: Fundamental treatment via chondrocyte regeneration."
@@ -90,8 +88,7 @@ export const content = {
           desc: [
             "Next-generation synthetic bone graft replacing BMP-2.",
             "Superior osteoinductivity with zero risk of side effects."
-          ],
-          hasImage: true
+          ]
         }
       ]
     },
@@ -214,7 +211,6 @@ export const content = {
           title: "QG3030 (골다공증 혁신 신약)",
           status: "임상 1상 완료 (2상 진입 준비)",
           progressStage: 1,
-          hasImage: true,
           desc: [
             "세계 최초의 경구용 골형성 촉진(Osteo-anabolic) 혁신 신약.",
             "조골세포 분화를 직접 촉진하며,",
@@ -227,7 +223,6 @@ export const content = {
           title: "비만 & 퇴행성 관절염",
           status: "임상 1상 진입 단계",
           progressStage: 1,
-          hasImage: true,
           desc: [
             "• 비만 (QG30-OB): 근손실 없이 내장 지방만 감소시키는 폐경기 비만 치료.",
             "• 퇴행성 관절염: 연골 세포 재생 촉진을 통한 근본적 치료."
@@ -242,8 +237,7 @@ export const content = {
           desc: [
             "기존 BMP-2를 완벽히 대체하는 차세대 융복합 합성골 이식재.",
             "부작용 위험 없이 압도적인 골유합능을 자랑합니다."
-          ],
-          hasImage: true
+          ]
         }
       ]
     },

@@ -1,15 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
-
-const pipelineCardImages: Record<string, string> = {
-  qg3030: "/pipeline-qg3030-stem-bone.svg",
-  expansion: "/pipeline-obesity-stemcell.svg",
-  qbone:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuCBkG2Nj1EpqrCYOQ5i2ZSTT8xlUCy1UxXQ3EavyYTHOWG1XvgehPTRIiiYXH8CqyarZu34-gZ8s32uQHMgcEYKhmwgyLt6hZekxZCmS-AQ6gkZr1FLGgzykw7xWi0RYzaX2vtjg0fv8FR2MdpkPzaZhLaKBYtdMi9bK06_1SJm2_YpWXRIU4iFXoRHb8l8UNp1aqpTBVMaLlsY_dLTJc3-jLDCjJcNGQWlekZ5I4-2w6BdgKZ7FXracavaI9d76XOv_j4DzaF3i7pc"
-};
 
 export default function PipelineSection() {
   const { lang } = useLanguage();
@@ -30,18 +22,20 @@ export default function PipelineSection() {
           {copy.items.map((item) => (
             <article
               key={item.id}
-              className="w-full min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-900"
+              className="flex h-full w-full min-w-0 flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-900"
             >
-              <p className="text-[11px] font-bold tracking-[0.16em] text-primary">{item.kicker}</p>
-              <h3
-                className={`mt-2 break-words text-xl font-extrabold leading-tight text-slate-900 dark:text-white ${
-                  lang === "kr" ? "word-keep-all" : ""
-                }`}
-              >
-                {item.title}
-              </h3>
+              <div className="md:min-h-[96px]">
+                <p className="text-[11px] font-bold tracking-[0.16em] text-primary">{item.kicker}</p>
+                <h3
+                  className={`mt-2 break-words text-xl font-extrabold leading-tight text-slate-900 dark:text-white ${
+                    lang === "kr" ? "word-keep-all" : ""
+                  }`}
+                >
+                  {item.title}
+                </h3>
+              </div>
 
-              <div className="mt-3">
+              <div className="mt-3 md:min-h-[48px]">
                 {item.id === "qg3030" ? (
                   <span className="inline-flex max-w-full flex-wrap items-center gap-1 rounded-full border border-green-600/30 bg-green-100 px-3 py-1 text-xs font-bold text-green-700 dark:bg-green-900/30 dark:text-green-300">
                     <span className="material-symbols-outlined text-sm">check_circle</span>
@@ -54,7 +48,7 @@ export default function PipelineSection() {
                 )}
               </div>
 
-              <div className="mt-4 space-y-1.5">
+              <div className="mt-4 space-y-1.5 md:min-h-[112px]">
                 {item.desc.map((line, lineIndex) => (
                   <p
                     key={`${item.id}-line-${lineIndex}`}
@@ -91,19 +85,6 @@ export default function PipelineSection() {
                       })}
                     </div>
                   </div>
-                </div>
-              ) : null}
-
-              {"hasImage" in item && item.hasImage && pipelineCardImages[item.id] ? (
-                <div className="mt-4 overflow-hidden rounded-lg border border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800">
-                  <Image
-                    src={pipelineCardImages[item.id]}
-                    alt={item.title}
-                    width={1200}
-                    height={480}
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="h-48 w-full object-cover"
-                  />
                 </div>
               ) : null}
             </article>
