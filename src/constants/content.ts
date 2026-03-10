@@ -131,10 +131,15 @@ export const content = {
           ]
         },
         {
-          name: "Jiwan Kim",
-          role: "Executive Director",
+          name: "Jiwan Kim, PhD",
+          role: "Chief Operating Officer",
           image: "/jiwan.jpg",
-          resume: ["Profile details are being updated"]
+          resume: [
+            "Drug R&BD Expert",
+            "Former Visiting Fellow, NIA/NIH",
+            "Former Senior Researcher, Daewoong and GC Wellbeing",
+            "Former Head of Research, Probio, Enzychem Lifesciences, and Genome & Company"
+          ]
         }
       ]
     },
@@ -286,10 +291,15 @@ export const content = {
           ]
         },
         {
-          name: "김지완 전무",
-          role: "Executive Director",
+          name: "김지완 전무이사 / COO / PhD",
+          role: "Chief Operating Officer",
           image: "/jiwan.jpg",
-          resume: ["프로필 상세 정보 업데이트 중"]
+          resume: [
+            "신약 R&BD 전문가",
+            "(전) NIA/NIH visiting fellow",
+            "(전) 대웅, 녹십자 웰빙 수석연구원",
+            "(전) 프로바이오, 엔지켐생명과학, 지놈앤컴퍼니 연구소장"
+          ]
         }
       ]
     },
