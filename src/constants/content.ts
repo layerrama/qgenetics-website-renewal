@@ -129,6 +129,12 @@ export const content = {
             "Former Head of Bio Business, HLB Life Science",
             "Former Head of BD, GeneOne Life Science"
           ]
+        },
+        {
+          name: "Jiwan Kim",
+          role: "Executive Director",
+          image: "/jiwan.jpg",
+          resume: ["Profile details are being updated"]
         }
       ]
     },
@@ -278,6 +284,12 @@ export const content = {
             "(전) HLB 생명과학, 바이오사업본부장",
             "(전) 진원생명과학(주), 사업개발본부장"
           ]
+        },
+        {
+          name: "김지완 전무",
+          role: "Executive Director",
+          image: "/jiwan.jpg",
+          resume: ["프로필 상세 정보 업데이트 중"]
         }
       ]
     },

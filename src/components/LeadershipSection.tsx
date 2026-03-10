@@ -16,7 +16,7 @@ export default function LeadershipSection() {
           {copy.title}
         </h2>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {copy.members.map((member) => (
             <article key={member.name} className="min-w-0 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
               <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
