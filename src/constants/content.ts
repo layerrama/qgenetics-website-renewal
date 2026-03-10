@@ -71,7 +71,7 @@ export const content = {
         {
           id: "expansion",
           kicker: "PIPELINE EXPANSION",
-          title: "Obesity & Osteoarthritis",
+          title: "Post menopausal obesity",
           status: "Entering Phase 1",
           progressStage: 1,
           desc: [
@@ -231,7 +231,7 @@ export const content = {
         {
           id: "expansion",
           kicker: "PIPELINE EXPANSION",
-          title: "비만 & 퇴행성 관절염",
+          title: "폐경기 비만",
           status: "임상 1상 진입 단계",
           progressStage: 1,
           desc: [
