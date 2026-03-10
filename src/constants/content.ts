@@ -138,7 +138,7 @@ export const content = {
             "Drug R&BD Expert",
             "Former Visiting Fellow, NIA/NIH",
             "Former Senior Researcher, Daewoong and GC Wellbeing",
-            "Former Head of Research, Probio, Enzychem Lifesciences, and Genome & Company"
+            "Former Head of Research, Prom Bio, Enzychem Lifesciences, and Genome & Company"
           ]
         }
       ]
@@ -298,7 +298,7 @@ export const content = {
             "신약 R&BD 전문가",
             "(전) NIA/NIH visiting fellow",
             "(전) 대웅, 녹십자 웰빙 수석연구원",
-            "(전) 프로바이오, 엔지켐생명과학, 지놈앤컴퍼니 연구소장"
+            "(전) 프롬 바이오, 엔지켐생명과학, 지놈앤컴퍼니 연구소장"
           ]
         }
       ]
