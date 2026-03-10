@@ -109,6 +109,17 @@ export const content = {
           ]
         },
         {
+          name: "Jiwan Kim, PhD",
+          role: "Chief Operating Officer",
+          image: "/jiwan.jpg",
+          resume: [
+            "Drug R&BD Expert",
+            "Former Visiting Fellow, NIA/NIH",
+            "Former Senior Researcher, Daewoong and GC Wellbeing",
+            "Former Head of Research, From Bio, Enzychem Lifesciences, and Genome & Company"
+          ]
+        },
+        {
           name: "Tae-hee Lee, PhD",
           role: "Chief Technology Officer",
           image: "/lee.png",
@@ -128,17 +139,6 @@ export const content = {
             "Former Head of Bio Business & BD, HLB",
             "Former Head of Bio Business, HLB Life Science",
             "Former Head of BD, GeneOne Life Science"
-          ]
-        },
-        {
-          name: "Jiwan Kim, PhD",
-          role: "Chief Operating Officer",
-          image: "/jiwan.jpg",
-          resume: [
-            "Drug R&BD Expert",
-            "Former Visiting Fellow, NIA/NIH",
-            "Former Senior Researcher, Daewoong and GC Wellbeing",
-            "Former Head of Research, Prom Bio, Enzychem Lifesciences, and Genome & Company"
           ]
         }
       ]
@@ -269,6 +269,17 @@ export const content = {
           ]
         },
         {
+          name: "김지완 전무이사 / COO / PhD",
+          role: "Chief Operating Officer",
+          image: "/jiwan.jpg",
+          resume: [
+            "신약 R&BD 전문가",
+            "(전) NIA/NIH visiting fellow",
+            "(전) 대웅, 녹십자 웰빙 수석연구원",
+            "(전) 프롬바이오, 엔지켐생명과학, 지놈앤컴퍼니 연구소장"
+          ]
+        },
+        {
           name: "이태희 전무이사 / CTO / PhD",
           role: "Chief Technology Officer",
           image: "/lee.png",
@@ -288,17 +299,6 @@ export const content = {
             "(전) HLB 바이오사업총괄, 사업개발부문장",
             "(전) HLB 생명과학, 바이오사업본부장",
             "(전) 진원생명과학(주), 사업개발본부장"
-          ]
-        },
-        {
-          name: "김지완 전무이사 / COO / PhD",
-          role: "Chief Operating Officer",
-          image: "/jiwan.jpg",
-          resume: [
-            "신약 R&BD 전문가",
-            "(전) NIA/NIH visiting fellow",
-            "(전) 대웅, 녹십자 웰빙 수석연구원",
-            "(전) 프롬바이오, 엔지켐생명과학, 지놈앤컴퍼니 연구소장"
           ]
         }
       ]
