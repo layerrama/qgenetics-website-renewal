@@ -71,7 +71,7 @@ export const content = {
         {
           id: "expansion",
           kicker: "PIPELINE EXPANSION",
-          title: "Post menopausal obesity",
+          title: "Postmenopausal Obesity",
           status: "Entering Phase 1",
           progressStage: 1,
           desc: [
