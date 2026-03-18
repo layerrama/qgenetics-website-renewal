@@ -38,7 +38,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-primary/20 mix-blend-overlay" />
 
           <div className="relative z-10 mx-auto w-full max-w-7xl px-4 md:px-8">
-            <div className="mx-auto mt-8 flex max-w-lg flex-col items-center gap-6">
+            <div className="mx-auto mt-8 flex max-w-lg flex-col items-center gap-6 text-center">
               <span className="inline-block rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-white shadow-lg drop-shadow-lg backdrop-blur-sm">
                 {copy.kicker}
               </span>
