@@ -37,10 +37,14 @@ export default function TechSection() {
           <span className="inline-flex rounded-full border border-primary/40 bg-primary/15 px-3 py-1 text-xs font-bold tracking-[0.14em] text-primary">
             {copy.kicker}
           </span>
-          <h2 className="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-white md:text-5xl">{copy.title}</h2>
-          <p className={`mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg ${lang === "kr" ? "word-keep-all" : ""}`}>
-            {copy.desc}
-          </p>
+          <h2
+            className={`mt-5 text-3xl font-extrabold leading-tight tracking-tight text-white md:text-5xl ${
+              lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""
+            }`}
+          >
+            {copy.title}
+          </h2>
+          <p className={`mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg ${lang === "kr" ? "word-keep-all" : ""}`}>{copy.desc}</p>
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">

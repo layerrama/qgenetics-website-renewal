@@ -12,7 +12,11 @@ export default function LeadershipSection() {
     <section className="bg-white py-12 font-display">
       <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
         <span className="text-xs font-bold uppercase tracking-wider text-primary">{copy.kicker}</span>
-        <h2 className={`mt-2 text-2xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-3xl ${lang === "kr" ? "word-keep-all" : ""}`}>
+        <h2
+          className={`mt-2 text-2xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-3xl ${
+            lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""
+          }`}
+        >
           {copy.title}
         </h2>
 

@@ -42,7 +42,11 @@ export default function HeroSection() {
               <span className="inline-block rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-white shadow-lg drop-shadow-lg backdrop-blur-sm">
                 {copy.kicker}
               </span>
-              <h1 className="font-serif text-4xl font-medium leading-tight tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl">
+              <h1
+                className={`font-serif text-4xl font-medium leading-tight tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl ${
+                  lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""
+                }`}
+              >
                 {hasFocusedTitle ? (
                   <>
                     <span className="block">{titleLead}</span>

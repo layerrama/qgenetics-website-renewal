@@ -43,9 +43,9 @@ export default function Footer() {
             <span className="material-symbols-outlined text-[20px]">call</span>
             <span className="text-sm font-medium">{copy.phone}</span>
           </a>
-          <div className="flex items-center gap-3 text-slate-600 dark:text-slate-300">
+          <div className="flex items-start gap-3 text-slate-600 dark:text-slate-300">
             <span className="material-symbols-outlined text-[20px]">location_on</span>
-            <span className="text-sm font-medium">{copy.address}</span>
+            <span className={`text-sm font-medium ${lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""}`}>{copy.address}</span>
           </div>
         </div>
 
