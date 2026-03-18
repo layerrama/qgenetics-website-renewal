@@ -24,7 +24,7 @@ export default function PhilosophyScrollSection() {
                   <span className="text-xl font-bold tracking-widest text-primary lg:text-2xl">{item.kicker}</span>
                   <h3
                     className={`mb-6 mt-4 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white lg:text-5xl ${
-                      lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""
+                      lang === "kr" ? "whitespace-pre-line md:whitespace-normal lg:whitespace-pre-line" : ""
                     }`}
                   >
                     {item.title}

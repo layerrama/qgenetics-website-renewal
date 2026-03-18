@@ -44,7 +44,7 @@ export default function HeroSection() {
               </span>
               <h1
                 className={`font-serif text-4xl font-medium leading-tight tracking-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl ${
-                  lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""
+                  lang === "kr" ? "whitespace-pre-line md:whitespace-normal lg:whitespace-pre-line" : ""
                 }`}
               >
                 {hasFocusedTitle ? (
