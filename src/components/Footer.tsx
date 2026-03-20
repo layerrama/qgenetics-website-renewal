@@ -72,12 +72,6 @@ export default function Footer() {
             >
               <span className="text-sm font-bold">In</span>
             </a>
-            <a
-              className="flex size-10 items-center justify-center rounded-full border border-slate-100 bg-white text-slate-400 shadow-sm transition-all hover:bg-primary/5 hover:text-primary dark:border-slate-700 dark:bg-slate-800"
-              href="#"
-            >
-              <span className="text-sm font-bold">X</span>
-            </a>
           </div>
           <p className="text-xs text-slate-400 dark:text-slate-500">{copy.copyright}</p>
         </div>
