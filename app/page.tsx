@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import LeadershipSection from "@/components/LeadershipSection";
 import Navbar from "@/components/Navbar";
+import NewsSection from "@/components/NewsSection";
 import PipelineSection from "@/components/PipelineSection";
 import PhilosophyScrollSection from "@/components/PhilosophyScrollSection";
 import TechSection from "@/components/TechSection";
@@ -24,6 +25,9 @@ export default function Home() {
       </section>
       <section id="leadership" className="scroll-mt-28">
         <LeadershipSection />
+      </section>
+      <section id="news" className="scroll-mt-28">
+        <NewsSection />
       </section>
       <section id="investors" className="scroll-mt-28">
         <Footer />

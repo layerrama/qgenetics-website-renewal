@@ -2,12 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const { lang, toggleLanguage } = useLanguage();
   const copy = content[lang];
+  const isHome = pathname === "/";
+  const navItems = isHome
+    ? [
+        { href: "#philosophy", label: copy.nav.philosophy },
+        { href: "#platform", label: copy.nav.platform },
+        { href: "#pipeline", label: copy.nav.pipeline },
+        { href: "#leadership", label: copy.nav.leadership },
+        { href: "/news", label: copy.nav.news }
+      ]
+    : [
+        { href: "/", label: copy.nav.home },
+        { href: "/news", label: copy.nav.news }
+      ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-background-dark/95">
@@ -42,26 +57,24 @@ export default function Navbar() {
       <nav className="no-scrollbar w-full overflow-x-auto border-t border-slate-100 bg-white dark:border-slate-800 dark:bg-background-dark">
         <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
           <ul className="flex min-w-max items-center gap-6 py-3">
-            <li>
-              <a className="border-b-2 border-primary pb-1 text-xs font-bold text-primary" href="#philosophy">
-                {copy.nav.philosophy}
-              </a>
-            </li>
-            <li>
-              <a className="text-xs font-bold text-slate-500 transition-colors hover:text-primary dark:text-slate-400" href="#platform">
-                {copy.nav.platform}
-              </a>
-            </li>
-            <li>
-              <a className="text-xs font-bold text-slate-500 transition-colors hover:text-primary dark:text-slate-400" href="#pipeline">
-                {copy.nav.pipeline}
-              </a>
-            </li>
-            <li>
-              <a className="text-xs font-bold text-slate-500 transition-colors hover:text-primary dark:text-slate-400" href="#leadership">
-                {copy.nav.leadership}
-              </a>
-            </li>
+            {navItems.map((item, index) => {
+              const isActive = isHome ? index === 0 : item.href === "/news" ? pathname.startsWith("/news") : item.href === pathname;
+
+              return (
+                <li key={item.href}>
+                  <Link
+                    className={`pb-1 text-xs font-bold transition-colors ${
+                      isActive
+                        ? "border-b-2 border-primary text-primary"
+                        : "text-slate-500 hover:text-primary dark:text-slate-400"
+                    }`}
+                    href={item.href}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </nav>

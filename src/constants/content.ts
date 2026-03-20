@@ -1,6 +1,8 @@
 export const content = {
   en: {
     nav: {
+      home: "HOME",
+      news: "NEWS",
       philosophy: "PHILOSOPHY",
       platform: "PLATFORM",
       pipeline: "PIPELINE",
@@ -149,6 +151,15 @@ export const content = {
       desc:
         "Join us in redefining the paradigm of aging. Qgenetics is leading the shift from mere symptom management to fundamental biological restoration. Partner with us to accelerate the clinical realization of our first-in-class osteo-anabolic therapeutics and proprietary AI-MSC platform."
     },
+    news: {
+      kicker: "LATEST UPDATES",
+      title: "News & Notices",
+      desc: "Follow our latest milestones, corporate announcements, and research progress in one place.",
+      readMore: "Read more",
+      viewAll: "View all posts",
+      backToList: "Back to News",
+      empty: "No posts have been published yet."
+    },
     footer: {
       brand: "Qgenetics",
       heading: "",
@@ -170,6 +181,8 @@ export const content = {
   },
   kr: {
     nav: {
+      home: "홈",
+      news: "뉴스",
       philosophy: "철학",
       platform: "플랫폼",
       pipeline: "파이프라인",
@@ -317,6 +330,15 @@ export const content = {
       title: "소프트에이징™ 패러다임의 선도",
       desc:
         "노화의 패러다임을 재정의하는 여정에 함께 하십시오. 큐제네틱스는 단순한 증상 관리를 넘어, 인체 본연의 생물학적 자생력을 복원합니다. 세계 최초의 경구용 골형성 혁신 신약과 AI-MSC 플랫폼의 임상적 실현을 가속화할 글로벌 파트너를 기다립니다."
+    },
+    news: {
+      kicker: "LATEST UPDATES",
+      title: "뉴스 & 공지",
+      desc: "큐제네틱스의 주요 마일스톤, 기업 공지, 연구 진행 소식을 한 곳에서 확인할 수 있습니다.",
+      readMore: "자세히 보기",
+      viewAll: "전체 게시글 보기",
+      backToList: "뉴스 목록으로",
+      empty: "아직 등록된 게시글이 없습니다."
     },
     footer: {
       brand: "큐제네틱스",
