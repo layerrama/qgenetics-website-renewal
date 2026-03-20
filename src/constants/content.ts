@@ -154,7 +154,16 @@ export const content = {
       heading: "",
       desc: "",
       email: "qgenetics@qgenetics.co.kr",
-      phone: "+82 10 7290 3030",
+      phones: [
+        {
+          label: "Main Office",
+          number: "+82 2 6348 9440"
+        },
+        {
+          label: "Research Lab",
+          number: "+82 2 961 0536"
+        }
+      ],
       address: "#401, Research and Business Development Foundation, 26, Kyungheedae-ro, Dongdaemun-gu, Seoul, Republic of Korea",
       copyright: "© 2024 Qgenetics Inc. All rights reserved."
     }
@@ -314,7 +323,16 @@ export const content = {
       heading: "",
       desc: "",
       email: "qgenetics@qgenetics.co.kr",
-      phone: "+82 10 7290 3030",
+      phones: [
+        {
+          label: "대표번호",
+          number: "+82 2 6348 9440"
+        },
+        {
+          label: "연구소",
+          number: "+82 2 961 0536"
+        }
+      ],
       address: "서울특별시 동대문구 경희대로 26,\n(구)이과대학 동관 401호",
       copyright: "© 2024 Qgenetics Inc. All rights reserved."
     }

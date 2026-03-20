@@ -9,7 +9,6 @@ export default function Footer() {
   const { lang } = useLanguage();
   const cta = content[lang].cta;
   const copy = content[lang].footer;
-  const phoneHref = `tel:${copy.phone.replace(/[^+\d]/g, "")}`;
   const emailHref = `mailto:${copy.email}`;
 
   return (
@@ -36,13 +35,25 @@ export default function Footer() {
             <span className="material-symbols-outlined text-[20px]">mail</span>
             <span className="text-sm font-medium">{copy.email}</span>
           </a>
-          <a
-            className="flex items-center gap-3 text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary"
-            href={phoneHref}
-          >
-            <span className="material-symbols-outlined text-[20px]">call</span>
-            <span className="text-sm font-medium">{copy.phone}</span>
-          </a>
+          <div className="flex items-start gap-3 text-slate-600 dark:text-slate-300">
+            <span className="material-symbols-outlined mt-0.5 text-[20px]">call</span>
+            <div className="flex flex-col gap-2">
+              {copy.phones.map((phone) => {
+                const phoneHref = `tel:${phone.number.replace(/[^+\d]/g, "")}`;
+
+                return (
+                  <a
+                    key={`${phone.label}-${phone.number}`}
+                    className="flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary dark:hover:text-primary"
+                    href={phoneHref}
+                  >
+                    <span className="min-w-[84px] text-slate-500 dark:text-slate-400">{phone.label}</span>
+                    <span>{phone.number}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
           <div className="flex items-start gap-3 text-slate-600 dark:text-slate-300">
             <span className="material-symbols-outlined text-[20px]">location_on</span>
             <span className={`text-sm font-medium ${lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""}`}>{copy.address}</span>
