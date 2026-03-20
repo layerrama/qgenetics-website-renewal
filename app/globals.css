@@ -1,5 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +7,9 @@
   --color-primary: #136dec;
   --color-background: #f0f7ff;
   --color-foreground: #2d3748;
+  --font-display: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --font-grotesk: "Aptos", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -50,33 +51,12 @@ h6 {
   letter-spacing: -0.015em;
 }
 
-html:lang(ko) body {
-  font-family: "Pretendard Variable", "Pretendard", var(--font-display), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-
-html:lang(ko) h1,
-html:lang(ko) h2,
-html:lang(ko) h3,
-html:lang(ko) h4,
-html:lang(ko) h5,
-html:lang(ko) h6 {
-  font-family: "Pretendard Variable", "Pretendard", var(--font-display), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-
 .app-shell {
   @apply min-h-screen w-full overflow-x-hidden bg-background-light;
 }
 
 .section-shell {
   @apply px-4;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-    "FILL" 0,
-    "wght" 400,
-    "GRAD" 0,
-    "opsz" 24;
 }
 
 .hide-scrollbar::-webkit-scrollbar {

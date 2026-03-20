@@ -1,5 +1,6 @@
 "use client";
 
+import { CircleCheckBig } from "lucide-react";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -38,7 +39,7 @@ export default function PipelineSection() {
               <div className="mt-3 md:min-h-[48px]">
                 {item.id === "qg3030" ? (
                   <span className="inline-flex max-w-full flex-wrap items-center gap-1 rounded-full border border-green-600/30 bg-green-100 px-3 py-1 text-xs font-bold text-green-700 dark:bg-green-900/30 dark:text-green-300">
-                    <span className="material-symbols-outlined text-sm">check_circle</span>
+                    <CircleCheckBig className="h-4 w-4" />
                     {item.status}
                   </span>
                 ) : (

@@ -1,5 +1,6 @@
 "use client";
 
+import { TrendingUp } from "lucide-react";
 import { content } from "@/constants/content";
 import { useLanguage } from "@/context/LanguageContext";
 import { designImages } from "@/content/design-images";
@@ -43,7 +44,7 @@ export default function PhilosophyScrollSection() {
                             {lang === "en" ? "2.1 Billion" : "21억 명"}
                           </p>
                           <span className="inline-flex items-center gap-1 rounded bg-primary/10 px-2 py-0.5 text-xs font-bold text-primary">
-                            <span className="material-symbols-outlined text-sm">trending_up</span>
+                            <TrendingUp className="h-4 w-4" />
                             {lang === "en" ? "+15% Growth" : "+15% 성장"}
                           </span>
                         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { content } from "@/constants/content";
@@ -33,11 +34,11 @@ export default function Footer() {
             className="flex items-center gap-3 text-slate-600 transition-colors hover:text-primary dark:text-slate-300 dark:hover:text-primary"
             href={emailHref}
           >
-            <span className="material-symbols-outlined text-[20px]">mail</span>
+            <Mail className="h-5 w-5 shrink-0" />
             <span className="text-sm font-medium">{copy.email}</span>
           </a>
           <div className="flex items-start gap-3 text-slate-600 dark:text-slate-300">
-            <span className="material-symbols-outlined mt-0.5 text-[20px]">call</span>
+            <Phone className="mt-0.5 h-5 w-5 shrink-0" />
             <div className="flex flex-col gap-2">
               {copy.phones.map((phone) => {
                 const phoneHref = `tel:${phone.number.replace(/[^+\d]/g, "")}`;
@@ -56,7 +57,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex items-start gap-3 text-slate-600 dark:text-slate-300">
-            <span className="material-symbols-outlined text-[20px]">location_on</span>
+            <MapPin className="h-5 w-5 shrink-0" />
             <span className={`text-sm font-medium ${lang === "kr" ? "whitespace-pre-line md:whitespace-normal" : ""}`}>{copy.address}</span>
           </div>
         </div>
@@ -70,7 +71,7 @@ export default function Footer() {
               rel="noreferrer"
               aria-label="Qgenetics LinkedIn"
             >
-              <span className="text-sm font-bold">In</span>
+              <Linkedin className="h-4 w-4" />
             </a>
           </div>
           <p className="text-xs text-slate-400 dark:text-slate-500">{copy.copyright}</p>
