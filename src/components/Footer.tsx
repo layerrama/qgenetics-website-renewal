@@ -10,6 +10,7 @@ export default function Footer() {
   const cta = content[lang].cta;
   const copy = content[lang].footer;
   const emailHref = `mailto:${copy.email}`;
+  const linkedinHref = "https://www.linkedin.com/company/qgenetics/";
 
   return (
     <footer className="border-t border-slate-100 bg-slate-50 py-12 font-display dark:border-slate-800 dark:bg-slate-950">
@@ -64,7 +65,10 @@ export default function Footer() {
           <div className="flex gap-4">
             <a
               className="flex size-10 items-center justify-center rounded-full border border-slate-100 bg-white text-slate-400 shadow-sm transition-all hover:bg-primary/5 hover:text-primary dark:border-slate-700 dark:bg-slate-800"
-              href="#"
+              href={linkedinHref}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Qgenetics LinkedIn"
             >
               <span className="text-sm font-bold">In</span>
             </a>

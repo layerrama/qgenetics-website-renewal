@@ -165,7 +165,7 @@ export const content = {
         }
       ],
       address: "#401, Research and Business Development Foundation, 26, Kyungheedae-ro, Dongdaemun-gu, Seoul, Republic of Korea",
-      copyright: "© 2024 Qgenetics Inc. All rights reserved."
+      copyright: "© 2026 Qgenetics co.,ltd"
     }
   },
   kr: {
@@ -334,7 +334,7 @@ export const content = {
         }
       ],
       address: "서울특별시 동대문구 경희대로 26,\n(구)이과대학 동관 401호",
-      copyright: "© 2024 Qgenetics Inc. All rights reserved."
+      copyright: "© 2026 Qgenetics co.,ltd"
     }
   }
 } as const;
