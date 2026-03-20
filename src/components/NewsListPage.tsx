@@ -4,7 +4,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { content } from "@/constants/content";
-import { getNewsPosts } from "@/content/news";
+import type { NewsPost } from "@/content/news";
 import { useLanguage } from "@/context/LanguageContext";
 
 function formatNewsDate(date: string, lang: "en" | "kr") {
@@ -15,10 +15,9 @@ function formatNewsDate(date: string, lang: "en" | "kr") {
   }).format(new Date(date));
 }
 
-export default function NewsListPage() {
+export default function NewsListPage({ posts }: { posts: NewsPost[] }) {
   const { lang } = useLanguage();
   const copy = content[lang].news;
-  const posts = getNewsPosts();
 
   return (
     <div className="app-shell min-h-screen">

@@ -6,8 +6,13 @@ import NewsSection from "@/components/NewsSection";
 import PipelineSection from "@/components/PipelineSection";
 import PhilosophyScrollSection from "@/components/PhilosophyScrollSection";
 import TechSection from "@/components/TechSection";
+import { getFeaturedNewsPosts } from "@/lib/news";
 
-export default function Home() {
+export const revalidate = 60;
+
+export default async function Home() {
+  const featuredPosts = await getFeaturedNewsPosts(3);
+
   return (
     <div className="app-shell" id="top">
       <Navbar />
@@ -27,7 +32,7 @@ export default function Home() {
         <LeadershipSection />
       </section>
       <section id="news" className="scroll-mt-28">
-        <NewsSection />
+        <NewsSection posts={featuredPosts} />
       </section>
       <section id="investors" className="scroll-mt-28">
         <Footer />

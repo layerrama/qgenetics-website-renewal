@@ -19,7 +19,7 @@ export type NewsPost = {
   translations: Record<Language, NewsTranslation>;
 };
 
-const newsPosts: NewsPost[] = [
+export const fallbackNewsPosts: NewsPost[] = [
   {
     slug: "qg3030-phase-2-readiness",
     publishedAt: "2026-03-12",
@@ -106,18 +106,3 @@ const newsPosts: NewsPost[] = [
     }
   }
 ];
-
-export function getNewsPosts() {
-  return [...newsPosts].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-}
-
-export function getFeaturedNewsPosts(limit = 3) {
-  return getNewsPosts()
-    .filter((post) => post.featured)
-    .concat(getNewsPosts().filter((post) => !post.featured))
-    .slice(0, limit);
-}
-
-export function getNewsPostBySlug(slug: string) {
-  return newsPosts.find((post) => post.slug === slug);
-}

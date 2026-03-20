@@ -1,9 +1,14 @@
 import { notFound } from "next/navigation";
 import NewsArticlePage from "@/components/NewsArticlePage";
-import { getNewsPostBySlug, getNewsPosts } from "@/content/news";
+import { getNewsPostBySlug, getNewsPosts } from "@/lib/news";
 
-export function generateStaticParams() {
-  return getNewsPosts().map((post) => ({
+export const revalidate = 60;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const posts = await getNewsPosts();
+
+  return posts.map((post) => ({
     slug: post.slug
   }));
 }

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { content } from "@/constants/content";
-import { getFeaturedNewsPosts } from "@/content/news";
+import type { NewsPost } from "@/content/news";
 import { useLanguage } from "@/context/LanguageContext";
 
 function formatNewsDate(date: string, lang: "en" | "kr") {
@@ -13,10 +13,9 @@ function formatNewsDate(date: string, lang: "en" | "kr") {
   }).format(new Date(date));
 }
 
-export default function NewsSection() {
+export default function NewsSection({ posts }: { posts: NewsPost[] }) {
   const { lang } = useLanguage();
   const copy = content[lang].news;
-  const posts = getFeaturedNewsPosts(3);
 
   return (
     <section className="bg-white py-12 font-display">
