@@ -47,7 +47,7 @@ export default function Footer() {
                     className="flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary dark:hover:text-primary"
                     href={phoneHref}
                   >
-                    <span className="min-w-[84px] text-slate-500 dark:text-slate-400">{phone.label}</span>
+                    <span className="w-[104px] shrink-0 text-slate-500 dark:text-slate-400">{phone.label}</span>
                     <span>{phone.number}</span>
                   </a>
                 );
