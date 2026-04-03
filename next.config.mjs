@@ -12,6 +12,21 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/shop_contents/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/bbs/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/myreg/:path*',
+        destination: '/',
+        permanent: true,
+      },
     ]
   },
   reactStrictMode: true,
