@@ -7,8 +7,14 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/main',
+        destination: '/',
+        permanent: true,
+      },
     ]
-  },reactStrictMode: true,
+  },
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
