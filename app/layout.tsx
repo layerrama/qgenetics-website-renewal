@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   description: "Qgenetics corporate site",
   verification: {
     other: {
-      "naver-site-verification": "b27afea2cc84b1c3dea9c8d0499b9cb35c230020"
+      "naver-site-verification": "b27afea2cc84b1c3dea9c8d0499b9cb35c230020",
+      "msvalidate.01": "800A21819C77F07BE94CCCE5E96DEA4C"
     }
   }
 };
