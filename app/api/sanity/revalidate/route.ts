@@ -1,6 +1,8 @@
 import { revalidatePath } from "next/cache";
 import { type NextRequest, NextResponse } from "next/server";
 import { parseBody } from "next-sanity/webhook";
+import { submitIndexNowUrls } from "@/lib/indexnow";
+import { absoluteUrl } from "@/lib/metadata";
 
 type WebhookPayload = {
   _type?: string;
@@ -32,6 +34,18 @@ export async function POST(request: NextRequest) {
       revalidatePath(`/news/${body.slug}`);
     } else {
       revalidatePath("/news/[slug]", "page");
+    }
+
+    const urlsToSubmit = [absoluteUrl("/"), absoluteUrl("/news")];
+
+    if (body.slug) {
+      urlsToSubmit.push(absoluteUrl(`/news/${body.slug}`));
+    }
+
+    try {
+      await submitIndexNowUrls(urlsToSubmit);
+    } catch (error) {
+      console.error("IndexNow submission error", error);
     }
 
     return NextResponse.json({ revalidated: true, body });
