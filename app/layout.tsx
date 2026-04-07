@@ -7,7 +7,12 @@ import Providers from "./providers";
 import Script from 'next/script';
 export const metadata: Metadata = {
   title: "Qgenetics",
-  description: "Qgenetics corporate site"
+  description: "Qgenetics corporate site",
+  verification: {
+    other: {
+      "naver-site-verification": "b27afea2cc84b1c3dea9c8d0499b9cb35c230020"
+    }
+  }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
@@ -30,4 +35,3 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     </html>
   );
 }
-
